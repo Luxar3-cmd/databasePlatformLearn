@@ -30,7 +30,10 @@ export default function Sidebar({ isOpen, collapsed, onToggleCollapse, onCloseMo
 	const widthClass = collapsed ? 'w-16' : 'w-64'
 
 	return (
-		<aside className={`${baseClasses} ${mobileClass} lg:relative lg:translate-x-0 ${widthClass}`}>
+		<aside
+			className={`${baseClasses} ${mobileClass} lg:relative lg:translate-x-0 ${widthClass}`}
+			aria-label="Navegacion"
+		>
 			{/* Sidebar header */}
 			<div className="flex items-center justify-between px-3 py-3 border-b border-zinc-800">
 				{!collapsed && (
