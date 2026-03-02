@@ -107,13 +107,52 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| — | — | Pending roadmap creation |
+| LAYOUT-01 | Phase 1 | Pending |
+| LAYOUT-02 | Phase 1 | Pending |
+| LAYOUT-03 | Phase 1 | Pending |
+| LAYOUT-04 | Phase 1 | Pending |
+| LAYOUT-05 | Phase 1 | Pending |
+| LAYOUT-06 | Phase 1 | Pending |
+| LAYOUT-07 | Phase 1 | Pending |
+| NFR-01 | Phase 1 | Pending |
+| NFR-02 | Phase 1 | Pending |
+| NFR-03 | Phase 1 | Pending |
+| NFR-05 | Phase 1 | Pending |
+| CONT-01 | Phase 2 | Pending |
+| CONT-02 | Phase 2 | Pending |
+| CONT-03 | Phase 2 | Pending |
+| CONT-04 | Phase 2 | Pending |
+| CONT-05 | Phase 2 | Pending |
+| CONT-06 | Phase 2 | Pending |
+| SQL-01 | Phase 2 | Pending |
+| SQL-02 | Phase 2 | Pending |
+| SQL-03 | Phase 2 | Pending |
+| SQL-04 | Phase 2 | Pending |
+| SQL-05 | Phase 2 | Pending |
+| SQL-06 | Phase 2 | Pending |
+| SQL-07 | Phase 2 | Pending |
+| SQL-08 | Phase 2 | Pending |
+| SQL-09 | Phase 2 | Pending |
+| QUIZ-01 | Phase 3 | Pending |
+| QUIZ-02 | Phase 3 | Pending |
+| QUIZ-03 | Phase 3 | Pending |
+| CHEAT-01 | Phase 3 | Pending |
+| CHEAT-02 | Phase 3 | Pending |
+| CHEAT-03 | Phase 3 | Pending |
+| CHEAT-04 | Phase 3 | Pending |
+| CHEAT-05 | Phase 3 | Pending |
+| CHEAT-06 | Phase 3 | Pending |
+| EJER-01 | Phase 3 | Pending |
+| EJER-02 | Phase 3 | Pending |
+| EJER-03 | Phase 3 | Pending |
+| EJER-04 | Phase 3 | Pending |
+| NFR-04 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 33 total
-- Mapped to phases: 0
-- Unmapped: 33 (pending roadmap)
+- Mapped to phases: 33
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-02*
-*Last updated: 2026-03-02 after initial definition*
+*Last updated: 2026-03-02 after roadmap creation*
