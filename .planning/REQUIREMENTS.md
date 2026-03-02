@@ -12,9 +12,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **LAYOUT-01**: Usuario ve sidebar con 6 unidades (U1 activa, U2-U6 bloqueadas visualmente)
 - [x] **LAYOUT-02**: Header muestra branding "BDD Lab UTFSM — Ayudantia INF-239"
 - [x] **LAYOUT-03**: Footer con creditos del curso
-- [ ] **LAYOUT-04**: Sub-navegacion por secciones dentro de unidad (Conceptos, Ejercicios, Editor SQL, Quiz, Cheat Sheet)
-- [ ] **LAYOUT-05**: Sidebar colapsable en mobile/tablet
-- [ ] **LAYOUT-06**: Pagina de Informacion General (presentacion del curso, profesores, programa)
+- [x] **LAYOUT-04**: Sub-navegacion por secciones dentro de unidad (Conceptos, Ejercicios, Editor SQL, Quiz, Cheat Sheet)
+- [x] **LAYOUT-05**: Sidebar colapsable en mobile/tablet
+- [x] **LAYOUT-06**: Pagina de Informacion General (presentacion del curso, profesores, programa)
 - [x] **LAYOUT-07**: Placeholders bloqueados para Tareas, Certamenes, Ayudantias en sidebar
 
 ### Contenido Teorico
@@ -63,7 +63,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### No Funcionales
 
 - [x] **NFR-01**: Dark mode profesional con tipografia clara para codigo y texto
-- [ ] **NFR-02**: Responsive desktop y tablet
+- [x] **NFR-02**: Responsive desktop y tablet
 - [x] **NFR-03**: Arquitectura modular — agregar unidades sin tocar componentes existentes
 - [ ] **NFR-04**: Deploy estatico a Vercel o GitHub Pages
 - [x] **NFR-05**: Todo el contenido e interfaz en espanol
@@ -110,12 +110,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LAYOUT-01 | Phase 1 | Complete |
 | LAYOUT-02 | Phase 1 | Complete |
 | LAYOUT-03 | Phase 1 | Complete |
-| LAYOUT-04 | Phase 1 | Pending |
-| LAYOUT-05 | Phase 1 | Pending |
-| LAYOUT-06 | Phase 1 | Pending |
+| LAYOUT-04 | Phase 1 | Complete |
+| LAYOUT-05 | Phase 1 | Complete |
+| LAYOUT-06 | Phase 1 | Complete |
 | LAYOUT-07 | Phase 1 | Complete |
 | NFR-01 | Phase 1 | Complete |
-| NFR-02 | Phase 1 | Pending |
+| NFR-02 | Phase 1 | Complete |
 | NFR-03 | Phase 1 | Complete |
 | NFR-05 | Phase 1 | Complete |
 | CONT-01 | Phase 2 | Pending |
@@ -155,4 +155,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-03-02*
-*Last updated: 2026-03-02 after roadmap creation*
+*Last updated: 2026-03-02 after 01-03 completion — LAYOUT-04, LAYOUT-05, LAYOUT-06, NFR-02 marked complete*

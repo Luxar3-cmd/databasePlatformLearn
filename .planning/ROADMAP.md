@@ -12,7 +12,7 @@ La plataforma se construye en cuatro fases. Primero se establece la arquitectura
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Fundacion** - Shell visual, arquitectura modular y tipos TypeScript base
+- [x] **Phase 1: Fundacion** - Shell visual, arquitectura modular y tipos TypeScript base
 - [ ] **Phase 2: Contenido U1 y Editor SQL** - Seccion Conceptos completa y editor SQL interactivo con AlaSQL
 - [ ] **Phase 3: Autoevaluacion** - Quiz, Cheat Sheet y Ejercicios Resueltos para U1
 - [ ] **Phase 4: Deploy** - Deploy estatico funcional con todas las rutas validadas
@@ -34,7 +34,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Vite + React 19 + Tailwind v4 + dark mode + data layer con tipos y unidades
 - [x] 01-02-PLAN.md — AppLayout + Sidebar con lock states + Header + Footer + React Router
-- [ ] 01-03-PLAN.md — InfoGeneral + placeholders + sidebar responsive mobile + verificacion visual
+- [x] 01-03-PLAN.md — InfoGeneral + placeholders + sidebar responsive mobile + verificacion visual
 
 ### Phase 2: Contenido U1 y Editor SQL
 **Goal**: El estudiante puede leer los conceptos completos de la Unidad 1 y ejecutar queries SQL reales contra una base de datos universitaria precargada directamente en el browser
@@ -91,7 +91,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Fundacion | 2/3 | In progress | - |
+| 1. Fundacion | 3/3 | Complete | 2026-03-02 |
 | 2. Contenido U1 y Editor SQL | 0/5 | Not started | - |
 | 3. Autoevaluacion | 0/3 | Not started | - |
 | 4. Deploy | 0/1 | Not started | - |
