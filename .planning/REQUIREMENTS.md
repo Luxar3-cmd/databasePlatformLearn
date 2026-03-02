@@ -62,11 +62,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### No Funcionales
 
-- [ ] **NFR-01**: Dark mode profesional con tipografia clara para codigo y texto
+- [x] **NFR-01**: Dark mode profesional con tipografia clara para codigo y texto
 - [ ] **NFR-02**: Responsive desktop y tablet
-- [ ] **NFR-03**: Arquitectura modular — agregar unidades sin tocar componentes existentes
+- [x] **NFR-03**: Arquitectura modular — agregar unidades sin tocar componentes existentes
 - [ ] **NFR-04**: Deploy estatico a Vercel o GitHub Pages
-- [ ] **NFR-05**: Todo el contenido e interfaz en espanol
+- [x] **NFR-05**: Todo el contenido e interfaz en espanol
 
 ## v2 Requirements
 
@@ -114,10 +114,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LAYOUT-05 | Phase 1 | Pending |
 | LAYOUT-06 | Phase 1 | Pending |
 | LAYOUT-07 | Phase 1 | Pending |
-| NFR-01 | Phase 1 | Pending |
+| NFR-01 | Phase 1 | Complete |
 | NFR-02 | Phase 1 | Pending |
-| NFR-03 | Phase 1 | Pending |
-| NFR-05 | Phase 1 | Pending |
+| NFR-03 | Phase 1 | Complete |
+| NFR-05 | Phase 1 | Complete |
 | CONT-01 | Phase 2 | Pending |
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |

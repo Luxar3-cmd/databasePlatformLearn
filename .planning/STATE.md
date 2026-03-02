@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 1 of 4 (Fundacion)
-Plan: 0 of 3 in current phase
-Status: Ready to plan
-Last activity: 2026-03-02 — Roadmap creado, requirements mapeados a 4 fases
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-03-02 — Plan 01-01 completado: scaffold Vite + data layer
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 10%
 
 ## Performance Metrics
 
@@ -46,6 +46,9 @@ Recent decisions affecting current work:
 - [Init]: Arquitectura modular — contenido en archivos de datos, componentes son pure renderers
 - [Research]: Usar CodeMirror 6 via @uiw/react-codemirror (no Monaco — bundle demasiado grande)
 - [Research]: Schema AlaSQL debe validarse primero — reserved keywords rompen schemas validos
+- [01-01]: Fontsource sobre Google Fonts CDN — self-hosted, sin dependencia externa
+- [01-01]: @custom-variant dark en CSS (Tailwind v4 — no existe tailwind.config.js)
+- [01-01]: SectionId literal type en UnitSection.id para type-safety en rutas
 
 ### Pending Todos
 
@@ -59,5 +62,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Roadmap y STATE inicializados. Siguiente paso: /gsd:plan-phase 1
+Stopped at: Completed 01-01-PLAN.md — scaffold Vite + React 19 + Tailwind v4 + data layer
 Resume file: None
