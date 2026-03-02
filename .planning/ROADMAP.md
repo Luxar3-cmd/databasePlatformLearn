@@ -46,14 +46,14 @@ Plans:
   3. Si el estudiante escribe SQL invalido, ve un mensaje de error claro en espanol (no el mensaje raw de AlaSQL)
   4. El estudiante puede ver el esquema de la BD universitaria (5 tablas con columnas y tipos) y resetear la BD al estado original
   5. El estudiante puede seguir 6 ejercicios guiados de dificultad progresiva con hints y ver la solucion
-**Plans**: TBD
+**Plans:** 5 plans
 
 Plans:
-- [ ] 02-01: Validar schema universitario contra AlaSQL (crear tablas, insertar seed, ejecutar queries de los ejercicios) y definir content types TypeScript
-- [ ] 02-02: Implementar `engine/sql.ts` singleton + `useSqlEngine` hook, BD universitaria con seed completo
-- [ ] 02-03: Componente EditorSection con CodeMirror 6, tabla de resultados, visor de esquema, boton reset, manejo de errores en espanol
-- [ ] 02-04: Contenido Conceptos U1 (1.1-1.4) en archivos `content/units/u1/concepts.tsx` con navegacion entre temas
-- [ ] 02-05: 6 ejercicios guiados en `content/units/u1/exercises.ts` con ExercisesSection que evalua respuestas
+- [ ] 02-01-PLAN.md — Instalar dependencias, validar AlaSQL en Vite 7, motor SQL singleton con BD universitaria UTFSM, tipos TypeScript
+- [ ] 02-02-PLAN.md — Editor SQL interactivo: useSqlEngine hook, CodeMirror 6, tabla resultados, schema viewer, consultas rapidas, reset
+- [ ] 02-03-PLAN.md — Contenido Conceptos U1 (1.1-1.4): tabs, callout boxes, tablas comparativas, contenido fiel al temario oficial
+- [ ] 02-04-PLAN.md — 6 ejercicios guiados SQL con mini-editor, pistas, soluciones, validacion automatica
+- [ ] 02-05-PLAN.md — Verificacion integracion + checkpoint visual de toda la fase
 
 ### Phase 3: Autoevaluacion
 **Goal**: El estudiante puede autoevaluarse con un quiz de seleccion multiple, consultar un cheat sheet visual de referencia, y practicar con ejercicios resueltos paso a paso — todo para la Unidad 1
@@ -92,6 +92,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Fundacion | 3/3 | Complete | 2026-03-02 |
-| 2. Contenido U1 y Editor SQL | 0/5 | Not started | - |
+| 2. Contenido U1 y Editor SQL | 0/5 | Planned | - |
 | 3. Autoevaluacion | 0/3 | Not started | - |
 | 4. Deploy | 0/1 | Not started | - |
