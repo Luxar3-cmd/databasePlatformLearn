@@ -9,13 +9,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Layout y Navegacion
 
-- [ ] **LAYOUT-01**: Usuario ve sidebar con 6 unidades (U1 activa, U2-U6 bloqueadas visualmente)
-- [ ] **LAYOUT-02**: Header muestra branding "BDD Lab UTFSM — Ayudantia INF-239"
-- [ ] **LAYOUT-03**: Footer con creditos del curso
+- [x] **LAYOUT-01**: Usuario ve sidebar con 6 unidades (U1 activa, U2-U6 bloqueadas visualmente)
+- [x] **LAYOUT-02**: Header muestra branding "BDD Lab UTFSM — Ayudantia INF-239"
+- [x] **LAYOUT-03**: Footer con creditos del curso
 - [ ] **LAYOUT-04**: Sub-navegacion por secciones dentro de unidad (Conceptos, Ejercicios, Editor SQL, Quiz, Cheat Sheet)
 - [ ] **LAYOUT-05**: Sidebar colapsable en mobile/tablet
 - [ ] **LAYOUT-06**: Pagina de Informacion General (presentacion del curso, profesores, programa)
-- [ ] **LAYOUT-07**: Placeholders bloqueados para Tareas, Certamenes, Ayudantias en sidebar
+- [x] **LAYOUT-07**: Placeholders bloqueados para Tareas, Certamenes, Ayudantias en sidebar
 
 ### Contenido Teorico
 
@@ -107,13 +107,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| LAYOUT-01 | Phase 1 | Pending |
-| LAYOUT-02 | Phase 1 | Pending |
-| LAYOUT-03 | Phase 1 | Pending |
+| LAYOUT-01 | Phase 1 | Complete |
+| LAYOUT-02 | Phase 1 | Complete |
+| LAYOUT-03 | Phase 1 | Complete |
 | LAYOUT-04 | Phase 1 | Pending |
 | LAYOUT-05 | Phase 1 | Pending |
 | LAYOUT-06 | Phase 1 | Pending |
-| LAYOUT-07 | Phase 1 | Pending |
+| LAYOUT-07 | Phase 1 | Complete |
 | NFR-01 | Phase 1 | Complete |
 | NFR-02 | Phase 1 | Pending |
 | NFR-03 | Phase 1 | Complete |

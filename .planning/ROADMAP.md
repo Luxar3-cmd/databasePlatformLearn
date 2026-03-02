@@ -32,8 +32,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Vite + React 19 + Tailwind v4 + dark mode + data layer con tipos y unidades
-- [ ] 01-02-PLAN.md — AppLayout + Sidebar con lock states + Header + Footer + React Router
+- [x] 01-01-PLAN.md — Scaffold Vite + React 19 + Tailwind v4 + dark mode + data layer con tipos y unidades
+- [x] 01-02-PLAN.md — AppLayout + Sidebar con lock states + Header + Footer + React Router
 - [ ] 01-03-PLAN.md — InfoGeneral + placeholders + sidebar responsive mobile + verificacion visual
 
 ### Phase 2: Contenido U1 y Editor SQL
@@ -91,7 +91,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Fundacion | 0/3 | Planning complete | - |
+| 1. Fundacion | 2/3 | In progress | - |
 | 2. Contenido U1 y Editor SQL | 0/5 | Not started | - |
 | 3. Autoevaluacion | 0/3 | Not started | - |
 | 4. Deploy | 0/1 | Not started | - |

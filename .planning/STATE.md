@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 1 of 4 (Fundacion)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-03-02 — Plan 01-01 completado: scaffold Vite + data layer
+Last activity: 2026-03-02 — Plan 01-02 completado: layout shell, React Router, Sidebar data-driven
 
-Progress: [█░░░░░░░░░] 10%
+Progress: [██░░░░░░░░] 20%
 
 ## Performance Metrics
 
@@ -49,6 +49,9 @@ Recent decisions affecting current work:
 - [01-01]: Fontsource sobre Google Fonts CDN — self-hosted, sin dependencia externa
 - [01-01]: @custom-variant dark en CSS (Tailwind v4 — no existe tailwind.config.js)
 - [01-01]: SectionId literal type en UnitSection.id para type-safety en rutas
+- [01-02]: App.tsx vaciado — RouterProvider en main.tsx elimina componente App raiz
+- [01-02]: Mapa de iconos estatico en SidebarUnit — NO dynamic import de lucide (bundle control)
+- [01-02]: expanded default !unit.locked — U1 arranca expandida automaticamente
 
 ### Pending Todos
 
@@ -62,5 +65,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Completed 01-01-PLAN.md — scaffold Vite + React 19 + Tailwind v4 + data layer
+Stopped at: Completed 01-02-PLAN.md — layout shell, React Router v7, Sidebar data-driven, Header/Footer
 Resume file: None
