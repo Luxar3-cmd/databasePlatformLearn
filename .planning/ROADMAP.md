@@ -29,12 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. El sidebar se colapsa en mobile/tablet y el contenido ocupa el ancho completo
   4. Todo el texto e interfaz esta en espanol y el fondo es dark mode sin colores hardcodeados
   5. Agregar una nueva unidad requiere solo crear un archivo de datos, sin tocar componentes existentes
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 01-01: Inicializar proyecto Vite + React 19 + TypeScript + Tailwind v4, estructura de carpetas `content/units/u{N}/`, `engine/`, `sections/`
-- [ ] 01-02: Implementar AppLayout + Sidebar con lock states, Header, Footer, y rutas React Router (`/unit/:unitId/:section`)
-- [ ] 01-03: Sub-navegacion por secciones, sidebar colapsable mobile, pagina Informacion General, dark mode y responsive
+- [ ] 01-01-PLAN.md — Scaffold Vite + React 19 + Tailwind v4 + dark mode + data layer con tipos y unidades
+- [ ] 01-02-PLAN.md — AppLayout + Sidebar con lock states + Header + Footer + React Router
+- [ ] 01-03-PLAN.md — InfoGeneral + placeholders + sidebar responsive mobile + verificacion visual
 
 ### Phase 2: Contenido U1 y Editor SQL
 **Goal**: El estudiante puede leer los conceptos completos de la Unidad 1 y ejecutar queries SQL reales contra una base de datos universitaria precargada directamente en el browser
@@ -91,7 +91,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Fundacion | 0/3 | Not started | - |
+| 1. Fundacion | 0/3 | Planning complete | - |
 | 2. Contenido U1 y Editor SQL | 0/5 | Not started | - |
 | 3. Autoevaluacion | 0/3 | Not started | - |
 | 4. Deploy | 0/1 | Not started | - |
