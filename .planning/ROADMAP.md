@@ -60,7 +60,7 @@ Plans:
 **Goal:** Cada concepto clave de U1 tiene al menos un ejemplo concreto de vida real (UTFSM o empresas tech) insertado inline con tono coloquial, haciendo tangibles los conceptos abstractos del temario
 **Requirements**: EJ-VIDA-01, EJ-VIDA-02, EJ-VIDA-03, EJ-VIDA-04
 **Depends on:** Phase 02
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [ ] 02.1-01-PLAN.md — Ejemplos vida real en Topic11 (Dato, Informacion, BD) y Topic12 (redundancia, inconsistencia, enfoque BD)

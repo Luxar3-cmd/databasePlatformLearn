@@ -3,12 +3,12 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-last_updated: "2026-03-03T02:15:32.875Z"
+last_updated: "2026-03-03T02:24:00.050Z"
 progress:
   total_phases: 3
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 10
-  completed_plans: 9
+  completed_plans: 10
 ---
 
 # Project State
@@ -23,9 +23,9 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 02.1 (Ejemplos Didacticos Vida Real para Conceptos U1) — COMPLETE
-Plan: 1 of 1 in current phase — COMPLETE
+Plan: 2 of 2 in current phase — COMPLETE
 Status: Phase 02.1 complete
-Last activity: 2026-03-03 — Plan 02.1-01 completado: 7 Callout examples en Topic11 y Topic12 con escenarios UTFSM y empresas tech (Spotify, Netflix, banco)
+Last activity: 2026-03-03 — Plan 02.1-02 completado: 5 Callout examples vida real en Topic13 y Topic14; mini-tablas PK/FK ALUMNO/SOLICITUD antes del SQL snippet
 
 Progress: [██████████] 90% (Phase 02.1 complete, Phase 03 pendiente)
 
@@ -50,6 +50,7 @@ Progress: [██████████] 90% (Phase 02.1 complete, Phase 03 pe
 *Updated after each plan completion*
 | Phase 02 P05 | 5 | 2 tasks | 0 files |
 | Phase 02.1-ejemplos-didacticos-vida-real-para-conceptos-u1 P01 | 3 | 2 tasks | 1 files |
+| Phase 02.1-ejemplos-didacticos-vida-real-para-conceptos-u1 P02 | 8 | 2 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -89,6 +90,8 @@ Recent decisions affecting current work:
 - [Phase 02.1-01]: No CodeMirror readonly para SQL snippets en ejemplos — pre existente suficiente para visuales estaticos de 3-5 lineas
 - [Phase 02.1-01]: Dos Callout separados para redundancia/inconsistencia en Topic12 (UTFSM + tienda online) — ilustran aspectos complementarios
 - [Phase 02.1-01]: Niveles organizacionales como Callout example separado en Topic11 (no inline en lista) para mayor visibilidad
+- [Phase 02.1-02]: Criterios 4-6 de Topic13 sin Callout completos — demasiado tecnicos para intro, inline cortos suficientes
+- [Phase 02.1-02]: Mini-tablas PK/FK antes del SQL snippet — patron pedagogico: datos reales primero, luego DDL abstracto
 
 ### Pending Todos
 
@@ -105,5 +108,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-03
-Stopped at: Completed 02.1-01-PLAN.md — 7 Callout examples vida real en Topic11 y Topic12; Phase 02.1 completa
+Stopped at: Completed 02.1-02-PLAN.md — 5 Callout examples vida real en Topic13 y Topic14; Phase 02.1 completa (2/2 planes)
 Resume file: None
