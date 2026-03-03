@@ -327,12 +327,40 @@ export function Topic12() {
 				</li>
 			</ul>
 
+			<Callout type="example" title="Redundancia e inconsistencia en la UTFSM">
+				La Direccion de Docencia guarda el nombre y direccion de cada alumno en su Excel. La DACE
+				tiene otra planilla con los mismos datos. En marzo, la alumna{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">Ana Soto</code> se cambia de casa y
+				actualiza su domicilio solo en Docencia. Ahora la DACE sigue con la direccion vieja — si
+				llega una carta importante, se pierde. Eso es <strong>redundancia no controlada</strong> que
+				derivó en <strong>inconsistencia</strong>: el mismo dato existe en dos lugares con valores
+				distintos.
+			</Callout>
+
+			<Callout type="example" title="Inconsistencia en una tienda online">
+				Imagina que una tienda tiene el stock registrado en 3 sistemas distintos: el sitio web, la
+				bodega y el punto de venta fisico. Un cliente compra el ultimo iPhone disponible en la tienda
+				fisica, pero el sitio web aun muestra{' '}
+				<em>"1 unidad disponible"</em> porque el archivo de stock no se actualizo. Otro cliente lo
+				compra online — y la tienda no puede cumplir la venta. Ese es el costo real de la{' '}
+				<strong>inconsistencia de datos</strong>.
+			</Callout>
+
 			<h3 className="text-base font-semibold text-zinc-200 mt-6">Enfoque de Bases de Datos</h3>
 			<p className="text-zinc-300 leading-relaxed">
 				Los datos son vistos como un recurso que debe ser compartido entre diferentes usuarios. Cada
 				usuario puede tener una vision (view) propia de la BD. Los datos son independientes del
 				programa que los usa. Se tiene control centralizado via DBMS.
 			</p>
+
+			<Callout type="example" title="Vision compartida en Netflix">
+				Netflix tiene <strong>una sola tabla de usuarios</strong> compartida por tres sistemas: el
+				motor de recomendaciones (que te sugiere series), el sistema de billing (que cobra tu plan) y
+				el soporte al cliente (que ve tu historial si llamas). Cuando cambias tu plan de Basic a
+				Premium, los tres sistemas ven el cambio inmediatamente — sin archivos separados, sin
+				inconsistencias. Eso es el <strong>enfoque de BD</strong>: datos como recurso compartido con
+				vision unica.
+			</Callout>
 
 			<h3 className="text-base font-semibold text-zinc-200 mt-4">Tabla comparativa</h3>
 
