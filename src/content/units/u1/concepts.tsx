@@ -512,6 +512,22 @@ export function Topic13() {
 				</div>
 			</section>
 
+			<Callout type="example" title="Relacional vs NoSQL en la practica">
+				<strong>BD Relacional</strong> — la UTFSM guarda todos los alumnos en una tabla con columnas
+				fijas: <code className="text-xs bg-zinc-800 px-1 rounded">RUT</code>,{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">NOMBRE</code>,{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">CARRERA</code>. Cada fila tiene exactamente
+				esas columnas — ni mas, ni menos. Eso es estructura rigida y predecible.
+				<br />
+				<br />
+				<strong>BD NoSQL</strong> — Airbnb usa MongoDB para almacenar propiedades. Una propiedad puede
+				tener <code className="text-xs bg-zinc-800 px-1 rounded">piscina: true</code> y{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">jacuzzi: false</code>; otra puede tener{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">estacionamiento: 2</code> y ninguna
+				referencia a piscina. Esa variabilidad de campos por documento es imposible en una tabla
+				relacional sin agregar columnas vacias para todos.
+			</Callout>
+
 			{/* Criterio 2 */}
 			<section>
 				<h3 className="text-base font-semibold text-zinc-200 mb-3">
@@ -578,6 +594,19 @@ export function Topic13() {
 					</table>
 				</div>
 			</section>
+
+			<Callout type="example" title="OLTP vs OLAP: Transbank y Falabella">
+				<strong>OLTP — Transbank</strong> procesa miles de pagos con tarjeta por segundo. Cada vez
+				que alguien paga en una tienda, hay un{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">INSERT</code> en la BD operacional: numero
+				de tarjeta, monto, comercio, fecha. Son transacciones cortas y repetitivas — eso es OLTP.
+				<br />
+				<br />
+				<strong>OLAP — Falabella</strong> analiza datos historicos de ventas para decidir que
+				productos comprar para la proxima temporada de invierno. No registra transacciones nuevas:
+				consulta millones de registros del pasado para extraer un agregado (ventas por categoria, por
+				region, por mes). Esa consulta analitica sobre datos historicos es OLAP.
+			</Callout>
 
 			{/* Criterio 3 */}
 			<section>
@@ -763,7 +792,107 @@ export function Topic13() {
 					No es cero ni blanco. Una PRIMARY KEY no puede ser NULL. Una FOREIGN KEY si puede ser NULL.
 				</Callout>
 
-				<h4 className="text-sm font-semibold text-zinc-300 mt-4 mb-2">Ejemplo SQL</h4>
+				<h4 className="text-sm font-semibold text-zinc-300 mt-4 mb-2">
+					Datos antes del esquema
+				</h4>
+				<p className="text-zinc-400 text-xs mb-3">
+					Antes de escribir el{' '}
+					<code className="bg-zinc-800 px-1 rounded">CREATE TABLE</code>, conviene ver como lucen los
+					datos reales. Aqui, <code className="bg-zinc-800 px-1 rounded">RUT_ALUMNO</code> en
+					SOLICITUD apunta a la PK de ALUMNO — eso es una Foreign Key en accion.
+				</p>
+
+				<div className="grid sm:grid-cols-2 gap-3 mb-4 text-xs">
+					<div>
+						<p className="text-zinc-500 font-mono mb-1">ALUMNO</p>
+						<div className="overflow-x-auto rounded border border-zinc-700">
+							<table className="w-full border-collapse">
+								<thead>
+									<tr className="bg-zinc-800">
+										<th className="px-3 py-1.5 text-left text-blue-300 font-semibold border-b border-zinc-700">
+											RUT (PK)
+										</th>
+										<th className="px-3 py-1.5 text-left text-zinc-300 font-medium border-b border-zinc-700">
+											NOMBRE
+										</th>
+										<th className="px-3 py-1.5 text-left text-zinc-300 font-medium border-b border-zinc-700">
+											CARRERA
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									{[
+										['12345678-9', 'Ana Soto', 'Ing. Civil Inf.'],
+										['98765432-1', 'Luis Vega', 'Ing. Civil Ind.'],
+										['11223344-5', 'Maria Paz', 'Ing. Civil Inf.'],
+									].map(([rut, nombre, carrera], i) => (
+										<tr key={rut} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
+											<td className="px-3 py-1.5 text-blue-300 border-b border-zinc-800 font-mono">
+												{rut}
+											</td>
+											<td className="px-3 py-1.5 text-zinc-300 border-b border-zinc-800">
+												{nombre}
+											</td>
+											<td className="px-3 py-1.5 text-zinc-400 border-b border-zinc-800">
+												{carrera}
+											</td>
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div>
+						<p className="text-zinc-500 font-mono mb-1">SOLICITUD</p>
+						<div className="overflow-x-auto rounded border border-zinc-700">
+							<table className="w-full border-collapse">
+								<thead>
+									<tr className="bg-zinc-800">
+										<th className="px-3 py-1.5 text-left text-blue-300 font-semibold border-b border-zinc-700">
+											CODSOL (PK)
+										</th>
+										<th className="px-3 py-1.5 text-left text-zinc-300 font-medium border-b border-zinc-700">
+											MOTIVO
+										</th>
+										<th className="px-3 py-1.5 text-left text-amber-300 font-semibold border-b border-zinc-700">
+											RUT_ALUMNO (FK)
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									{[
+										['1001', 'Cambio seccion', '12345678-9'],
+										['1002', 'Toma de ramo', '98765432-1'],
+										['1003', 'Retiro asignatura', '12345678-9'],
+									].map(([cod, motivo, rut], i) => (
+										<tr key={cod} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
+											<td className="px-3 py-1.5 text-blue-300 border-b border-zinc-800 font-mono">
+												{cod}
+											</td>
+											<td className="px-3 py-1.5 text-zinc-300 border-b border-zinc-800">
+												{motivo}
+											</td>
+											<td className="px-3 py-1.5 text-amber-300 border-b border-zinc-800 font-mono">
+												{rut}
+											</td>
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<p className="text-zinc-500 text-xs mb-4">
+					Ana Soto (
+					<code className="bg-zinc-800 px-1 rounded text-blue-300">12345678-9</code>) tiene dos
+					solicitudes: CODSOL 1001 y 1003. El valor{' '}
+					<code className="bg-zinc-800 px-1 rounded text-amber-300">12345678-9</code> en
+					RUT_ALUMNO es la FK que conecta SOLICITUD con ALUMNO — eliminar a Ana Soto sin borrar sus
+					solicitudes primero violaría la integridad referencial.
+				</p>
+
+				<h4 className="text-sm font-semibold text-zinc-300 mb-2">Esquema SQL</h4>
 				<pre className="bg-zinc-900 border border-zinc-800 rounded-md p-4 text-xs text-green-300 overflow-x-auto font-mono">
 					{`CREATE TABLE ALUMNO
 (
