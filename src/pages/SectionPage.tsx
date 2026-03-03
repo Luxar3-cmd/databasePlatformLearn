@@ -2,6 +2,7 @@ import { useParams } from 'react-router'
 import { UNITS } from '@/data/units'
 import type { SectionId } from '@/types/content'
 import PlaceholderSection from '@/components/ui/PlaceholderSection'
+import EditorSection from '@/components/u1/EditorSection'
 
 const SECTION_DESCRIPTIONS: Record<SectionId, string> = {
 	conceptos: 'Contenido teorico de la unidad con definiciones, tablas comparativas y ejemplos',
@@ -32,13 +33,26 @@ export default function SectionPage() {
 		)
 	}
 
+	const breadcrumb = (
+		<p className="text-zinc-500 text-sm mb-6">
+			Unidad {unit.number}: {unit.title}{' '}
+			<span className="text-zinc-700">&rsaquo;</span>{' '}
+			<span className="text-zinc-400">{sectionData.label}</span>
+		</p>
+	)
+
+	if (unit.id === 'u1' && sectionData.id === 'editor-sql') {
+		return (
+			<div>
+				{breadcrumb}
+				<EditorSection />
+			</div>
+		)
+	}
+
 	return (
 		<div>
-			<p className="text-zinc-500 text-sm mb-6">
-				Unidad {unit.number}: {unit.title}{' '}
-				<span className="text-zinc-700">&rsaquo;</span>{' '}
-				<span className="text-zinc-400">{sectionData.label}</span>
-			</p>
+			{breadcrumb}
 			<PlaceholderSection
 				title={sectionData.label}
 				description={SECTION_DESCRIPTIONS[sectionData.id as SectionId] ?? 'Contenido proximamente'}
