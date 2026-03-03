@@ -29,14 +29,14 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Editor SQL Interactivo
 
 - [x] **SQL-01**: Motor AlaSQL integrado con BD universitaria precargada (5 tablas, ~30 registros)
-- [ ] **SQL-02**: Editor con CodeMirror 6 y syntax highlighting SQL
-- [ ] **SQL-03**: Boton Ejecutar + atajo Ctrl+Enter
-- [ ] **SQL-04**: Tabla de resultados con columnas y filas
-- [ ] **SQL-05**: Manejo de errores con mensajes claros en espanol
-- [ ] **SQL-06**: Boton reset de BD para restaurar estado original
-- [ ] **SQL-07**: Visor de esquema de BD (toggle show/hide)
+- [x] **SQL-02**: Editor con CodeMirror 6 y syntax highlighting SQL
+- [x] **SQL-03**: Boton Ejecutar + atajo Ctrl+Enter
+- [x] **SQL-04**: Tabla de resultados con columnas y filas
+- [x] **SQL-05**: Manejo de errores con mensajes claros en espanol
+- [x] **SQL-06**: Boton reset de BD para restaurar estado original
+- [x] **SQL-07**: Visor de esquema de BD (toggle show/hide)
 - [ ] **SQL-08**: 6 ejercicios guiados (basico a avanzado) con hints y soluciones
-- [ ] **SQL-09**: Botones de consultas rapidas para explorar tablas
+- [x] **SQL-09**: Botones de consultas rapidas para explorar tablas
 
 ### Quiz
 
@@ -125,14 +125,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-05 | Phase 2 | Pending |
 | CONT-06 | Phase 2 | Pending |
 | SQL-01 | Phase 2 | Complete |
-| SQL-02 | Phase 2 | Pending |
-| SQL-03 | Phase 2 | Pending |
-| SQL-04 | Phase 2 | Pending |
-| SQL-05 | Phase 2 | Pending |
-| SQL-06 | Phase 2 | Pending |
-| SQL-07 | Phase 2 | Pending |
+| SQL-02 | Phase 2 | Complete |
+| SQL-03 | Phase 2 | Complete |
+| SQL-04 | Phase 2 | Complete |
+| SQL-05 | Phase 2 | Complete |
+| SQL-06 | Phase 2 | Complete |
+| SQL-07 | Phase 2 | Complete |
 | SQL-08 | Phase 2 | Pending |
-| SQL-09 | Phase 2 | Pending |
+| SQL-09 | Phase 2 | Complete |
 | QUIZ-01 | Phase 3 | Pending |
 | QUIZ-02 | Phase 3 | Pending |
 | QUIZ-03 | Phase 3 | Pending |
