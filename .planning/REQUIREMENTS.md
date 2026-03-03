@@ -46,12 +46,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Cheat Sheet
 
-- [ ] **CHEAT-01**: Definiciones clave (Dato, Informacion, BD, DBMS, DDL, DML, DCL)
-- [ ] **CHEAT-02**: Tabla comparativa enfoque archivos vs BD
-- [ ] **CHEAT-03**: Mapa de tipos de BD (segun 6 criterios de clasificacion)
-- [ ] **CHEAT-04**: Las 6 etapas de diseno con objetivo de cada una
-- [ ] **CHEAT-05**: Niveles organizacionales y tipos de SI
-- [ ] **CHEAT-06**: Terminologia relacional (relacion/tupla/atributo/dominio/clave)
+- [x] **CHEAT-01**: Definiciones clave (Dato, Informacion, BD, DBMS, DDL, DML, DCL)
+- [x] **CHEAT-02**: Tabla comparativa enfoque archivos vs BD
+- [x] **CHEAT-03**: Mapa de tipos de BD (segun 6 criterios de clasificacion)
+- [x] **CHEAT-04**: Las 6 etapas de diseno con objetivo de cada una
+- [x] **CHEAT-05**: Niveles organizacionales y tipos de SI
+- [x] **CHEAT-06**: Terminologia relacional (relacion/tupla/atributo/dominio/clave)
 
 ### Ejercicios Resueltos
 
@@ -136,12 +136,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | QUIZ-01 | Phase 3 | Complete |
 | QUIZ-02 | Phase 3 | Complete |
 | QUIZ-03 | Phase 3 | Complete |
-| CHEAT-01 | Phase 3 | Pending |
-| CHEAT-02 | Phase 3 | Pending |
-| CHEAT-03 | Phase 3 | Pending |
-| CHEAT-04 | Phase 3 | Pending |
-| CHEAT-05 | Phase 3 | Pending |
-| CHEAT-06 | Phase 3 | Pending |
+| CHEAT-01 | Phase 3 | Complete |
+| CHEAT-02 | Phase 3 | Complete |
+| CHEAT-03 | Phase 3 | Complete |
+| CHEAT-04 | Phase 3 | Complete |
+| CHEAT-05 | Phase 3 | Complete |
+| CHEAT-06 | Phase 3 | Complete |
 | EJER-01 | Phase 3 | Pending |
 | EJER-02 | Phase 3 | Pending |
 | EJER-03 | Phase 3 | Pending |

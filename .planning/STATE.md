@@ -23,11 +23,11 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 03-autoevaluacion — IN PROGRESS
-Plan: 1 of 3 in current phase — COMPLETE
-Status: Plan 03-01 complete (quiz MCQ wizard)
-Last activity: 2026-03-03 — Plan 03-01 completado: Quiz wizard funcional en /unit/u1/quiz, 13 preguntas, Fisher-Yates shuffle, feedback inmediato, score final y retry
+Plan: 2 of 3 in current phase — COMPLETE
+Status: Plan 03-02 complete (cheat sheet visual U1)
+Last activity: 2026-03-02 — Plan 03-02 completado: Cheat sheet en /unit/u1/cheat-sheet, 6 secciones scrollables con sticky nav, tablas comparativas, terminologia relacional
 
-Progress: [██████████] 93% (Phase 03 in progress: 1/3 plans complete)
+Progress: [██████████] 96% (Phase 03 in progress: 2/3 plans complete)
 
 ## Performance Metrics
 
@@ -52,6 +52,7 @@ Progress: [██████████] 93% (Phase 03 in progress: 1/3 plans 
 | Phase 02.1-ejemplos-didacticos-vida-real-para-conceptos-u1 P01 | 3 | 2 tasks | 1 files |
 | Phase 02.1-ejemplos-didacticos-vida-real-para-conceptos-u1 P02 | 8 | 2 tasks | 1 files |
 | Phase 03-autoevaluacion P01 | 12 | 2 tasks | 3 files |
+| Phase 03-autoevaluacion P02 | 15 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -96,6 +97,9 @@ Recent decisions affecting current work:
 - [03-01]: ShuffledOption { text, isCorrect } — correctIndex positional queda stale post-shuffle; el patron objeto evita el bug critico del Pitfall 1
 - [03-01]: 13 preguntas (vs 12 planificadas) — pregunta extra en Topic 1.4 para separar DW y ETL como conceptos distintos
 - [03-01]: Explicacion de feedback inline (border-left azul) en lugar de componente Callout — mas liviano para contexto de examen
+- [03-02]: top-[57px] en sticky nav del cheat sheet — header AppLayout tiene py-3 + border + texto (~57px); sin offset la nav queda bajo el header
+- [03-02]: 6 funciones exportadas en cheatsheet.tsx — patron de Topic11-Topic14 de concepts.tsx, consistencia sobre novedad
+- [03-02]: CSEtapasDiseno cubre 5 etapas del ciclo SI + Modelamiento BD — ambos en temario 1.4
 
 ### Pending Todos
 
@@ -111,6 +115,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-03
-Stopped at: Completed 03-01-PLAN.md — Quiz wizard MCQ en /unit/u1/quiz, 13 preguntas Fisher-Yates shuffled; Phase 03 in progress (1/3 planes)
+Last session: 2026-03-02
+Stopped at: Completed 03-02-PLAN.md — Cheat sheet visual U1 en /unit/u1/cheat-sheet, 6 secciones + sticky nav; Phase 03 in progress (2/3 planes)
 Resume file: None
