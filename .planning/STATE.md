@@ -90,6 +90,10 @@ Recent decisions affecting current work:
 
 None yet.
 
+### Roadmap Evolution
+
+- Phase 02.1 inserted after Phase 02: Ejemplos didacticos vida real para conceptos U1 (URGENT)
+
 ### Blockers/Concerns
 
 - [Phase 2]: AlaSQL no aplica FK ni PK constraints — documentar limitacion en UI, no depender de errores de constraint en ejercicios (el blocker anterior de schema no validado quedo resuelto en 02-01)
