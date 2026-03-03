@@ -55,6 +55,17 @@ Plans:
 - [x] 02-04-PLAN.md — 6 ejercicios guiados SQL con mini-editor, pistas, soluciones, validacion automatica
 - [x] 02-05-PLAN.md — Verificacion integracion + checkpoint visual de toda la fase
 
+### Phase 02.1: Ejemplos didacticos vida real para conceptos U1 (INSERTED)
+
+**Goal:** Cada concepto clave de U1 tiene al menos un ejemplo concreto de vida real (UTFSM o empresas tech) insertado inline con tono coloquial, haciendo tangibles los conceptos abstractos del temario
+**Requirements**: EJ-VIDA-01, EJ-VIDA-02, EJ-VIDA-03, EJ-VIDA-04
+**Depends on:** Phase 02
+**Plans:** 2 plans
+
+Plans:
+- [ ] 02.1-01-PLAN.md — Ejemplos vida real en Topic11 (Dato, Informacion, BD) y Topic12 (redundancia, inconsistencia, enfoque BD)
+- [ ] 02.1-02-PLAN.md — Ejemplos vida real en Topic13 (tipos BD, relacional, NoSQL, OLTP/OLAP) y Topic14 (modelamiento, DW/ETL)
+
 ### Phase 3: Autoevaluacion
 **Goal**: El estudiante puede autoevaluarse con un quiz de seleccion multiple, consultar un cheat sheet visual de referencia, y practicar con ejercicios resueltos paso a paso — todo para la Unidad 1
 **Depends on**: Phase 2
@@ -87,11 +98,12 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4
+Phases execute in numeric order: 1 → 2 → 2.1 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Fundacion | 3/3 | Complete | 2026-03-02 |
 | 2. Contenido U1 y Editor SQL | 5/5 | Complete   | 2026-03-03 |
+| 2.1 Ejemplos didacticos U1 | 0/2 | Not started | - |
 | 3. Autoevaluacion | 0/3 | Not started | - |
 | 4. Deploy | 0/1 | Not started | - |
