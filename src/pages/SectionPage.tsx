@@ -5,6 +5,7 @@ import PlaceholderSection from '@/components/ui/PlaceholderSection'
 import ConceptsSection from '@/components/u1/ConceptsSection'
 import EditorSection from '@/components/u1/EditorSection'
 import ExercisesSection from '@/components/u1/ExercisesSection'
+import QuizSection from '@/components/u1/QuizSection'
 
 const SECTION_DESCRIPTIONS: Record<SectionId, string> = {
 	conceptos: 'Contenido teorico de la unidad con definiciones, tablas comparativas y ejemplos',
@@ -66,6 +67,15 @@ export default function SectionPage() {
 			<div>
 				{breadcrumb}
 				<ExercisesSection />
+			</div>
+		)
+	}
+
+	if (unit.id === 'u1' && sectionData.id === 'quiz') {
+		return (
+			<div>
+				{breadcrumb}
+				<QuizSection />
 			</div>
 		)
 	}
