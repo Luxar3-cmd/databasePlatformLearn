@@ -22,12 +22,12 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 
 ## Current Position
 
-Phase: 03-autoevaluacion — IN PROGRESS
-Plan: 2 of 3 in current phase — COMPLETE
-Status: Plan 03-02 complete (cheat sheet visual U1)
-Last activity: 2026-03-02 — Plan 03-02 completado: Cheat sheet en /unit/u1/cheat-sheet, 6 secciones scrollables con sticky nav, tablas comparativas, terminologia relacional
+Phase: 03-autoevaluacion — COMPLETE
+Plan: 3 of 3 in current phase — COMPLETE
+Status: Plan 03-03 complete (ejercicios resueltos con revelacion progresiva U1)
+Last activity: 2026-03-03 — Plan 03-03 completado: 8 ejercicios resueltos (2x4 tipos) con revelacion progresiva en ExercisesSection tabs SQL/Resueltos
 
-Progress: [██████████] 96% (Phase 03 in progress: 2/3 plans complete)
+Progress: [██████████] 100% (Phase 03 complete: 3/3 plans complete)
 
 ## Performance Metrics
 
@@ -53,6 +53,7 @@ Progress: [██████████] 96% (Phase 03 in progress: 2/3 plans 
 | Phase 02.1-ejemplos-didacticos-vida-real-para-conceptos-u1 P02 | 8 | 2 tasks | 1 files |
 | Phase 03-autoevaluacion P01 | 12 | 2 tasks | 3 files |
 | Phase 03-autoevaluacion P02 | 15 | 2 tasks | 3 files |
+| Phase 03-autoevaluacion P03 | 3 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -100,6 +101,9 @@ Recent decisions affecting current work:
 - [03-02]: top-[57px] en sticky nav del cheat sheet — header AppLayout tiene py-3 + border + texto (~57px); sin offset la nav queda bajo el header
 - [03-02]: 6 funciones exportadas en cheatsheet.tsx — patron de Topic11-Topic14 de concepts.tsx, consistencia sobre novedad
 - [03-02]: CSEtapasDiseno cubre 5 etapas del ciclo SI + Modelamiento BD — ambos en temario 1.4
+- [03-03]: revealedSteps como entero (no array de bools) — slice(0, n) mas simple, reveal siempre secuencial
+- [03-03]: TYPE_ORDER array explicito en SolvedExercisesSection — orden canonico declarativo sin depender del orden de U1_SOLVED_EXERCISES
+- [03-03]: Tab bar inline en ExercisesSection sin extraccion — 2 tabs no justifican componente separado
 
 ### Pending Todos
 
@@ -115,6 +119,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-02
-Stopped at: Completed 03-02-PLAN.md — Cheat sheet visual U1 en /unit/u1/cheat-sheet, 6 secciones + sticky nav; Phase 03 in progress (2/3 planes)
+Last session: 2026-03-03
+Stopped at: Completed 03-03-PLAN.md — 8 ejercicios resueltos con revelacion progresiva en ExercisesSection tabs SQL/Resueltos; Phase 03 COMPLETE (3/3 planes)
 Resume file: None

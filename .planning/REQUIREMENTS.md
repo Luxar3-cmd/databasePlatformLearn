@@ -55,10 +55,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Ejercicios Resueltos
 
-- [ ] **EJER-01**: Ejercicios de identificar desventajas del enfoque de archivos en escenarios reales
-- [ ] **EJER-02**: Ejercicios de clasificar tipos de BD segun criterios dados
-- [ ] **EJER-03**: Ejercicios de mapear niveles organizacionales a tipos de SI
-- [ ] **EJER-04**: Ejercicios de relacionar problemas archivos con soluciones BD
+- [x] **EJER-01**: Ejercicios de identificar desventajas del enfoque de archivos en escenarios reales
+- [x] **EJER-02**: Ejercicios de clasificar tipos de BD segun criterios dados
+- [x] **EJER-03**: Ejercicios de mapear niveles organizacionales a tipos de SI
+- [x] **EJER-04**: Ejercicios de relacionar problemas archivos con soluciones BD
 
 ### No Funcionales
 
@@ -142,10 +142,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CHEAT-04 | Phase 3 | Complete |
 | CHEAT-05 | Phase 3 | Complete |
 | CHEAT-06 | Phase 3 | Complete |
-| EJER-01 | Phase 3 | Pending |
-| EJER-02 | Phase 3 | Pending |
-| EJER-03 | Phase 3 | Pending |
-| EJER-04 | Phase 3 | Pending |
+| EJER-01 | Phase 3 | Complete |
+| EJER-02 | Phase 3 | Complete |
+| EJER-03 | Phase 3 | Complete |
+| EJER-04 | Phase 3 | Complete |
 | NFR-04 | Phase 4 | Pending |
 
 **Coverage:**
