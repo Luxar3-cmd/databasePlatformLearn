@@ -21,6 +21,16 @@ export function Topic11() {
 				organizacion: Finanzas, Produccion, Ventas, Personal, etc.
 			</Callout>
 
+			<Callout type="example" title="Dato en la UTFSM">
+				Imagina que eres alumno de la UTFSM. Tu RUT{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">12.345.678-9</code>, tu rol{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">201234567-8</code>, la nota{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">5.3</code> del certamen 1 de INF-239 y la
+				fecha <code className="text-xs bg-zinc-800 px-1 rounded">2026-03-15</code> son{' '}
+				<strong>datos</strong>: hechos aislados almacenados en la BD de la universidad. Por si solos
+				no te dicen nada util.
+			</Callout>
+
 			<Callout type="definition" title="Informacion">
 				Datos que han sido organizados o preparados en una forma adecuada para apoyar la toma de
 				decisiones. Por ejemplo, una lista de productos sin orden son datos; esa misma lista ordenada
@@ -28,9 +38,27 @@ export function Topic11() {
 				decidir cuándo y cuánto reponer.
 			</Callout>
 
+			<Callout type="example" title="Informacion en Spotify">
+				Spotify tiene millones de plays registrados (datos). Cuando te muestra{' '}
+				<em>"tu artista mas escuchado del mes fue Billie Eilish con 847 reproducciones"</em>, convirtio
+				esos datos en <strong>informacion</strong>: algo organizado y presentado para que puedas tomar
+				una decision. Esos datos se convirtieron en informacion porque estan estructurados para
+				responder una pregunta concreta.
+			</Callout>
+
 			<Callout type="definition" title="Base de Datos (BD)">
 				Conjunto de archivos de datos relacionados entre si donde se almacenan datos relevantes para
 				la organizacion y que posteriormente seran recuperados para transformarlos en informacion.
+			</Callout>
+
+			<Callout type="example" title="Base de Datos en Spotify">
+				Piensa en Spotify: tiene una tabla de{' '}
+				<strong>canciones</strong> (titulo, artista, duracion), una tabla de{' '}
+				<strong>usuarios</strong> (nombre, pais, plan), y una tabla de{' '}
+				<strong>reproducciones</strong> que las conecta (quien escucho que y cuando). Esas tres tablas
+				relacionadas entre si son una <strong>base de datos</strong>. La propiedad clave es la{' '}
+				<em>integracion</em>: todos los datos viven en un solo lugar coherente, y miles de usuarios
+				los comparten a la vez.
 			</Callout>
 
 			<h3 className="text-base font-semibold text-zinc-200 mt-6">Definicion tecnica</h3>
@@ -73,6 +101,15 @@ export function Topic11() {
 					planificacion a largo plazo (gerente general).
 				</li>
 			</ul>
+
+			<Callout type="example" title="Los tres niveles en un banco">
+				En el Banco de Chile, un cajero registra cada deposito al instante (
+				<strong>operacional</strong>). El jefe de sucursal revisa cuantas transacciones se hicieron
+				esta semana y que producto tuvo mas demanda (<strong>tactico</strong>). El CEO analiza si
+				conviene abrir una nueva sucursal en Quilpue basandose en el crecimiento de clientes de los
+				ultimos 3 anos (<strong>estrategico</strong>). Los tres usan la misma BD — pero consultan
+				datos a distinto nivel de detalle.
+			</Callout>
 
 			<h3 className="text-base font-semibold text-zinc-200 mt-6">Operaciones CRUD sobre la BD</h3>
 			<p className="text-zinc-300 leading-relaxed">
