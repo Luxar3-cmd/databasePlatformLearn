@@ -13,7 +13,7 @@ La plataforma se construye en cuatro fases. Primero se establece la arquitectura
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Fundacion** - Shell visual, arquitectura modular y tipos TypeScript base
-- [ ] **Phase 2: Contenido U1 y Editor SQL** - Seccion Conceptos completa y editor SQL interactivo con AlaSQL
+- [x] **Phase 2: Contenido U1 y Editor SQL** - Seccion Conceptos completa y editor SQL interactivo con AlaSQL (completed 2026-03-03)
 - [ ] **Phase 3: Autoevaluacion** - Quiz, Cheat Sheet y Ejercicios Resueltos para U1
 - [ ] **Phase 4: Deploy** - Deploy estatico funcional con todas las rutas validadas
 
@@ -46,14 +46,14 @@ Plans:
   3. Si el estudiante escribe SQL invalido, ve un mensaje de error claro en espanol (no el mensaje raw de AlaSQL)
   4. El estudiante puede ver el esquema de la BD universitaria (5 tablas con columnas y tipos) y resetear la BD al estado original
   5. El estudiante puede seguir 6 ejercicios guiados de dificultad progresiva con hints y ver la solucion
-**Plans:** 4/5 plans executed
+**Plans:** 5/5 plans complete
 
 Plans:
-- [ ] 02-01-PLAN.md — Instalar dependencias, validar AlaSQL en Vite 7, motor SQL singleton con BD universitaria UTFSM, tipos TypeScript
-- [ ] 02-02-PLAN.md — Editor SQL interactivo: useSqlEngine hook, CodeMirror 6, tabla resultados, schema viewer, consultas rapidas, reset
-- [ ] 02-03-PLAN.md — Contenido Conceptos U1 (1.1-1.4): tabs, callout boxes, tablas comparativas, contenido fiel al temario oficial
-- [ ] 02-04-PLAN.md — 6 ejercicios guiados SQL con mini-editor, pistas, soluciones, validacion automatica
-- [ ] 02-05-PLAN.md — Verificacion integracion + checkpoint visual de toda la fase
+- [x] 02-01-PLAN.md — Instalar dependencias, validar AlaSQL en Vite 7, motor SQL singleton con BD universitaria UTFSM, tipos TypeScript
+- [x] 02-02-PLAN.md — Editor SQL interactivo: useSqlEngine hook, CodeMirror 6, tabla resultados, schema viewer, consultas rapidas, reset
+- [x] 02-03-PLAN.md — Contenido Conceptos U1 (1.1-1.4): tabs, callout boxes, tablas comparativas, contenido fiel al temario oficial
+- [x] 02-04-PLAN.md — 6 ejercicios guiados SQL con mini-editor, pistas, soluciones, validacion automatica
+- [x] 02-05-PLAN.md — Verificacion integracion + checkpoint visual de toda la fase
 
 ### Phase 3: Autoevaluacion
 **Goal**: El estudiante puede autoevaluarse con un quiz de seleccion multiple, consultar un cheat sheet visual de referencia, y practicar con ejercicios resueltos paso a paso — todo para la Unidad 1
@@ -92,6 +92,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Fundacion | 3/3 | Complete | 2026-03-02 |
-| 2. Contenido U1 y Editor SQL | 4/5 | In Progress|  |
+| 2. Contenido U1 y Editor SQL | 5/5 | Complete   | 2026-03-03 |
 | 3. Autoevaluacion | 0/3 | Not started | - |
 | 4. Deploy | 0/1 | Not started | - |
