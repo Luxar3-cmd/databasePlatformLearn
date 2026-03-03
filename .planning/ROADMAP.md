@@ -75,12 +75,12 @@ Plans:
   2. Al terminar el quiz, el estudiante ve su score final y puede intentarlo de nuevo con preguntas en orden diferente
   3. El estudiante puede consultar el cheat sheet con definiciones clave, tabla comparativa, mapa de tipos de BD y etapas de diseno sin salir de la plataforma
   4. El estudiante puede trabajar ejercicios resueltos de los 4 tipos (desventajas archivos, clasificar BD, niveles organizacionales, problemas vs soluciones) y ver la solucion paso a paso
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 03-01: Contenido quiz en `content/units/u1/quiz.ts` (10+ preguntas MCQ con feedback) + QuizSection wizard con randomizacion y score final
-- [ ] 03-02: Contenido cheat sheet en `content/units/u1/cheatsheet.tsx` (6 secciones) + CheatSheetSection visual
-- [ ] 03-03: Ejercicios resueltos en `content/units/u1/solved-exercises.ts` (4 tipos) + ExercisesSolvedSection con solucion paso a paso
+- [ ] 03-01-PLAN.md — Quiz MCQ wizard: 12+ preguntas U1 con feedback inmediato, score final, randomizacion y retry
+- [ ] 03-02-PLAN.md — Cheat sheet visual: 6 secciones de referencia rapida con sticky nav y scroll por anclas
+- [ ] 03-03-PLAN.md — Ejercicios resueltos: 8 ejercicios conceptuales con revelacion progresiva, integrados en tabs con ejercicios SQL
 
 ### Phase 4: Deploy
 **Goal**: La plataforma esta disponible publicamente en una URL permanente, todas las rutas funcionan al hacer refresh, y el build estatico es el artefacto que se despliega
