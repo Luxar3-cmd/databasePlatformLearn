@@ -40,9 +40,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Quiz
 
-- [ ] **QUIZ-01**: 10+ preguntas seleccion multiple sobre U1 con retroalimentacion inmediata
-- [ ] **QUIZ-02**: Score final al completar el quiz
-- [ ] **QUIZ-03**: Randomizacion de orden de preguntas y opciones en cada intento
+- [x] **QUIZ-01**: 10+ preguntas seleccion multiple sobre U1 con retroalimentacion inmediata
+- [x] **QUIZ-02**: Score final al completar el quiz
+- [x] **QUIZ-03**: Randomizacion de orden de preguntas y opciones en cada intento
 
 ### Cheat Sheet
 
@@ -133,9 +133,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SQL-07 | Phase 2 | Complete |
 | SQL-08 | Phase 2 | Complete |
 | SQL-09 | Phase 2 | Complete |
-| QUIZ-01 | Phase 3 | Pending |
-| QUIZ-02 | Phase 3 | Pending |
-| QUIZ-03 | Phase 3 | Pending |
+| QUIZ-01 | Phase 3 | Complete |
+| QUIZ-02 | Phase 3 | Complete |
+| QUIZ-03 | Phase 3 | Complete |
 | CHEAT-01 | Phase 3 | Pending |
 | CHEAT-02 | Phase 3 | Pending |
 | CHEAT-03 | Phase 3 | Pending |

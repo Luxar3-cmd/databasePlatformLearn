@@ -22,12 +22,12 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 
 ## Current Position
 
-Phase: 02.1 (Ejemplos Didacticos Vida Real para Conceptos U1) — COMPLETE
-Plan: 2 of 2 in current phase — COMPLETE
-Status: Phase 02.1 complete
-Last activity: 2026-03-03 — Plan 02.1-02 completado: 5 Callout examples vida real en Topic13 y Topic14; mini-tablas PK/FK ALUMNO/SOLICITUD antes del SQL snippet
+Phase: 03-autoevaluacion — IN PROGRESS
+Plan: 1 of 3 in current phase — COMPLETE
+Status: Plan 03-01 complete (quiz MCQ wizard)
+Last activity: 2026-03-03 — Plan 03-01 completado: Quiz wizard funcional en /unit/u1/quiz, 13 preguntas, Fisher-Yates shuffle, feedback inmediato, score final y retry
 
-Progress: [██████████] 90% (Phase 02.1 complete, Phase 03 pendiente)
+Progress: [██████████] 93% (Phase 03 in progress: 1/3 plans complete)
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ Progress: [██████████] 90% (Phase 02.1 complete, Phase 03 pe
 | Phase 02 P05 | 5 | 2 tasks | 0 files |
 | Phase 02.1-ejemplos-didacticos-vida-real-para-conceptos-u1 P01 | 3 | 2 tasks | 1 files |
 | Phase 02.1-ejemplos-didacticos-vida-real-para-conceptos-u1 P02 | 8 | 2 tasks | 1 files |
+| Phase 03-autoevaluacion P01 | 12 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -92,6 +93,9 @@ Recent decisions affecting current work:
 - [Phase 02.1-01]: Niveles organizacionales como Callout example separado en Topic11 (no inline en lista) para mayor visibilidad
 - [Phase 02.1-02]: Criterios 4-6 de Topic13 sin Callout completos — demasiado tecnicos para intro, inline cortos suficientes
 - [Phase 02.1-02]: Mini-tablas PK/FK antes del SQL snippet — patron pedagogico: datos reales primero, luego DDL abstracto
+- [03-01]: ShuffledOption { text, isCorrect } — correctIndex positional queda stale post-shuffle; el patron objeto evita el bug critico del Pitfall 1
+- [03-01]: 13 preguntas (vs 12 planificadas) — pregunta extra en Topic 1.4 para separar DW y ETL como conceptos distintos
+- [03-01]: Explicacion de feedback inline (border-left azul) en lugar de componente Callout — mas liviano para contexto de examen
 
 ### Pending Todos
 
@@ -108,5 +112,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-03
-Stopped at: Completed 02.1-02-PLAN.md — 5 Callout examples vida real en Topic13 y Topic14; Phase 02.1 completa (2/2 planes)
+Stopped at: Completed 03-01-PLAN.md — Quiz wizard MCQ en /unit/u1/quiz, 13 preguntas Fisher-Yates shuffled; Phase 03 in progress (1/3 planes)
 Resume file: None
