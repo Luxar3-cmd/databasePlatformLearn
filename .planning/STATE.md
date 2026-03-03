@@ -2,13 +2,13 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: unknown
-last_updated: "2026-03-02T20:48:15.880Z"
+status: in_progress
+last_updated: "2026-03-03T01:09:00.000Z"
 progress:
-  total_phases: 1
+  total_phases: 4
   completed_phases: 1
-  total_plans: 3
-  completed_plans: 3
+  total_plans: 8
+  completed_plans: 4
 ---
 
 # Project State
@@ -18,16 +18,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-02)
 
 **Core value:** Los estudiantes practican SQL y se autoevaluan sobre INF-239 directamente en el browser, sin instalar nada
-**Current focus:** Phase 1 — Fundacion
+**Current focus:** Phase 2 — Contenido U1 y Editor SQL
 
 ## Current Position
 
-Phase: 1 of 4 (Fundacion)
-Plan: 3 of 3 in current phase
-Status: Phase 1 complete
-Last activity: 2026-03-02 — Plan 01-03 completado: shell visual completo, InfoGeneral, PlaceholderSection, responsive mobile
+Phase: 2 of 4 (Contenido U1 y Editor SQL)
+Plan: 1 of 5 in current phase
+Status: Plan 02-01 complete
+Last activity: 2026-03-03 — Plan 02-01 completado: motor AlaSQL singleton, BD universitaria UTFSM, tipos SQL compartidos
 
-Progress: [███░░░░░░░] 30%
+Progress: [████░░░░░░] 40%
 
 ## Performance Metrics
 
@@ -41,10 +41,11 @@ Progress: [███░░░░░░░] 30%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-fundacion | 3/3 | ~90 min | ~30 min |
+| 02-contenido-u1-y-editor-sql | 1/5 | ~2 min | ~2 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01, 01-02, 01-03
-- Trend: Fase 1 completada
+- Last 5 plans: 01-01, 01-02, 01-03, 02-01
+- Trend: Fase 2 en progreso
 
 *Updated after each plan completion*
 
@@ -68,6 +69,10 @@ Recent decisions affecting current work:
 - [01-03]: Mapa SectionId->descripcion inline en SectionPage — 5 strings no justifican archivo separado
 - [01-03]: onCloseMobile siempre llamado al navegar — en desktop isOpen no afecta al sidebar fijo
 - [01-03]: PlaceholderSection usa mapa de iconos existente de SidebarUnit — sin duplicacion
+- [02-01]: alasql incluye tipos TS propios (types/alasql.d.ts) — no se necesita @types/alasql
+- [02-01]: Schema universitario en schema.ts separado — alasql.tables interno no documentado en 4.x
+- [02-01]: initialized flag en sql.ts — multiples useEffect no re-seedean la BD
+- [02-01]: vite.config.ts no requirio optimizeDeps.include — alasql 4.x compatible con Vite 7
 
 ### Pending Todos
 
@@ -75,11 +80,10 @@ None yet.
 
 ### Blockers/Concerns
 
-- [Phase 1-2]: Schema universitario contra AlaSQL no esta validado — es el primer entregable critico de Fase 2, plan 02-01 debe ejecutarse antes de cualquier componente React
-- [Phase 2]: AlaSQL no aplica FK ni PK constraints — documentar limitacion en UI, no depender de errores de constraint en ejercicios
+- [Phase 2]: AlaSQL no aplica FK ni PK constraints — documentar limitacion en UI, no depender de errores de constraint en ejercicios (el blocker anterior de schema no validado quedo resuelto en 02-01)
 
 ## Session Continuity
 
-Last session: 2026-03-02
-Stopped at: Completed 01-03-PLAN.md — shell visual completo, InfoGeneral landing, PlaceholderSection, responsive aprobado
+Last session: 2026-03-03
+Stopped at: Completed 02-01-PLAN.md — motor AlaSQL singleton, BD universitaria UTFSM (5 tablas, 55 registros), tipos SQL compartidos, CodeMirror deps instaladas
 Resume file: None

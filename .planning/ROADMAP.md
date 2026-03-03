@@ -46,7 +46,7 @@ Plans:
   3. Si el estudiante escribe SQL invalido, ve un mensaje de error claro en espanol (no el mensaje raw de AlaSQL)
   4. El estudiante puede ver el esquema de la BD universitaria (5 tablas con columnas y tipos) y resetear la BD al estado original
   5. El estudiante puede seguir 6 ejercicios guiados de dificultad progresiva con hints y ver la solucion
-**Plans:** 5 plans
+**Plans:** 1/5 plans executed
 
 Plans:
 - [ ] 02-01-PLAN.md — Instalar dependencias, validar AlaSQL en Vite 7, motor SQL singleton con BD universitaria UTFSM, tipos TypeScript
@@ -92,6 +92,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Fundacion | 3/3 | Complete | 2026-03-02 |
-| 2. Contenido U1 y Editor SQL | 0/5 | Planned | - |
+| 2. Contenido U1 y Editor SQL | 1/5 | In Progress|  |
 | 3. Autoevaluacion | 0/3 | Not started | - |
 | 4. Deploy | 0/1 | Not started | - |

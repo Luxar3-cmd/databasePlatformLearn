@@ -28,7 +28,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Editor SQL Interactivo
 
-- [ ] **SQL-01**: Motor AlaSQL integrado con BD universitaria precargada (5 tablas, ~30 registros)
+- [x] **SQL-01**: Motor AlaSQL integrado con BD universitaria precargada (5 tablas, ~30 registros)
 - [ ] **SQL-02**: Editor con CodeMirror 6 y syntax highlighting SQL
 - [ ] **SQL-03**: Boton Ejecutar + atajo Ctrl+Enter
 - [ ] **SQL-04**: Tabla de resultados con columnas y filas
@@ -124,7 +124,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-04 | Phase 2 | Pending |
 | CONT-05 | Phase 2 | Pending |
 | CONT-06 | Phase 2 | Pending |
-| SQL-01 | Phase 2 | Pending |
+| SQL-01 | Phase 2 | Complete |
 | SQL-02 | Phase 2 | Pending |
 | SQL-03 | Phase 2 | Pending |
 | SQL-04 | Phase 2 | Pending |
