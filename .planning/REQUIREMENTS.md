@@ -19,12 +19,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Contenido Teorico
 
-- [ ] **CONT-01**: Seccion 1.1 completa — Definicion de Bases de Datos
-- [ ] **CONT-02**: Seccion 1.2 completa — Enfoque de Archivos vs Enfoque de BD
-- [ ] **CONT-03**: Seccion 1.3 completa — Tipos de Bases de Datos
-- [ ] **CONT-04**: Seccion 1.4 completa — Proceso de Diseno de BD
-- [ ] **CONT-05**: Navegacion entre temas dentro de la seccion Conceptos
-- [ ] **CONT-06**: Diseno visual claro para definiciones, tablas comparativas, listados
+- [x] **CONT-01**: Seccion 1.1 completa — Definicion de Bases de Datos
+- [x] **CONT-02**: Seccion 1.2 completa — Enfoque de Archivos vs Enfoque de BD
+- [x] **CONT-03**: Seccion 1.3 completa — Tipos de Bases de Datos
+- [x] **CONT-04**: Seccion 1.4 completa — Proceso de Diseno de BD
+- [x] **CONT-05**: Navegacion entre temas dentro de la seccion Conceptos
+- [x] **CONT-06**: Diseno visual claro para definiciones, tablas comparativas, listados
 
 ### Editor SQL Interactivo
 
@@ -118,12 +118,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | NFR-02 | Phase 1 | Complete |
 | NFR-03 | Phase 1 | Complete |
 | NFR-05 | Phase 1 | Complete |
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
-| CONT-04 | Phase 2 | Pending |
-| CONT-05 | Phase 2 | Pending |
-| CONT-06 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Complete |
+| CONT-02 | Phase 2 | Complete |
+| CONT-03 | Phase 2 | Complete |
+| CONT-04 | Phase 2 | Complete |
+| CONT-05 | Phase 2 | Complete |
+| CONT-06 | Phase 2 | Complete |
 | SQL-01 | Phase 2 | Complete |
 | SQL-02 | Phase 2 | Complete |
 | SQL-03 | Phase 2 | Complete |

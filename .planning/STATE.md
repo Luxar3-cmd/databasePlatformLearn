@@ -8,7 +8,7 @@ progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 8
-  completed_plans: 5
+  completed_plans: 6
 ---
 
 # Project State
@@ -23,11 +23,11 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 2 of 4 (Contenido U1 y Editor SQL)
-Plan: 2 of 5 in current phase
-Status: Plan 02-02 complete
-Last activity: 2026-03-02 — Plan 02-02 completado: editor SQL interactivo completo en /unit/u1/editor-sql
+Plan: 3 of 5 in current phase
+Status: Plan 02-03 complete
+Last activity: 2026-03-03 — Plan 02-03 completado: seccion Conceptos U1 completa con tabs, callouts y tablas comparativas
 
-Progress: [█████░░░░░] 50%
+Progress: [██████░░░░] 60%
 
 ## Performance Metrics
 
@@ -41,10 +41,10 @@ Progress: [█████░░░░░] 50%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-fundacion | 3/3 | ~90 min | ~30 min |
-| 02-contenido-u1-y-editor-sql | 2/5 | ~10 min | ~5 min |
+| 02-contenido-u1-y-editor-sql | 3/5 | ~16 min | ~5 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01, 01-02, 01-03, 02-01, 02-02
+- Last 5 plans: 01-02, 01-03, 02-01, 02-02, 02-03
 - Trend: Fase 2 en progreso
 
 *Updated after each plan completion*
@@ -76,6 +76,8 @@ Recent decisions affecting current work:
 - [02-02]: useSqlEngine usa estado local (no Context) — editor es instancia unica, Context seria over-engineering
 - [02-02]: Botones consultas rapidas ejecutan al instante — setQuery + execute en una llamada
 - [02-02]: SectionPage branch condicional (unit.id + sectionData.id) — patron a seguir para futuros componentes especializados
+- [02-03]: Contenido en TSX estatico (no markdown) — control total del layout por seccion sin parser adicional
+- [02-03]: ScrollIntoView via ref en ConceptsSection — smooth scroll al inicio del panel al cambiar de tab
 
 ### Pending Todos
 
@@ -87,6 +89,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-02
-Stopped at: Completed 02-02-PLAN.md — editor SQL interactivo completo: useSqlEngine hook, CodeMirror SqlEditor, ResultsTable, SchemaViewer, EditorSection en /unit/u1/editor-sql
+Last session: 2026-03-03
+Stopped at: Completed 02-03-PLAN.md — seccion Conceptos U1 completa con tabs, callouts y tablas comparativas montada en /unit/u1/conceptos
 Resume file: None
