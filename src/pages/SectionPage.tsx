@@ -2,6 +2,7 @@ import { useParams } from 'react-router'
 import { UNITS } from '@/data/units'
 import type { SectionId } from '@/types/content'
 import PlaceholderSection from '@/components/ui/PlaceholderSection'
+import ConceptsSection from '@/components/u1/ConceptsSection'
 import EditorSection from '@/components/u1/EditorSection'
 
 const SECTION_DESCRIPTIONS: Record<SectionId, string> = {
@@ -40,6 +41,15 @@ export default function SectionPage() {
 			<span className="text-zinc-400">{sectionData.label}</span>
 		</p>
 	)
+
+	if (unit.id === 'u1' && sectionData.id === 'conceptos') {
+		return (
+			<div>
+				{breadcrumb}
+				<ConceptsSection />
+			</div>
+		)
+	}
 
 	if (unit.id === 'u1' && sectionData.id === 'editor-sql') {
 		return (
