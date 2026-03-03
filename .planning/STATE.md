@@ -8,7 +8,7 @@ progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 8
-  completed_plans: 6
+  completed_plans: 7
 ---
 
 # Project State
@@ -23,11 +23,11 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 2 of 4 (Contenido U1 y Editor SQL)
-Plan: 3 of 5 in current phase
-Status: Plan 02-03 complete
-Last activity: 2026-03-03 — Plan 02-03 completado: seccion Conceptos U1 completa con tabs, callouts y tablas comparativas
+Plan: 4 of 5 in current phase
+Status: Plan 02-04 complete
+Last activity: 2026-03-03 — Plan 02-04 completado: 6 ejercicios guiados SQL con mini-editor, pistas, soluciones y validacion automatica montados en /unit/u1/ejercicios
 
-Progress: [██████░░░░] 60%
+Progress: [███████░░░] 70%
 
 ## Performance Metrics
 
@@ -78,6 +78,10 @@ Recent decisions affecting current work:
 - [02-02]: SectionPage branch condicional (unit.id + sectionData.id) — patron a seguir para futuros componentes especializados
 - [02-03]: Contenido en TSX estatico (no markdown) — control total del layout por seccion sin parser adicional
 - [02-03]: ScrollIntoView via ref en ConceptsSection — smooth scroll al inicio del panel al cambiar de tab
+- [02-04]: rowsMatch normaliza filas via JSON.stringify con keys ordenados — comparacion correcta independientemente del orden de columnas y filas
+- [02-04]: ExerciseCard autocontenida con estado local — no necesita Context externo
+- [02-04]: completedIds en Set en memoria (ExercisesSection) — persistencia es v2, fuera de scope
+- [02-04]: initDb() en ExercisesSection useEffect — cubre navegacion directa a ejercicios sin pasar por EditorSection
 
 ### Pending Todos
 
@@ -90,5 +94,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-03
-Stopped at: Completed 02-03-PLAN.md — seccion Conceptos U1 completa con tabs, callouts y tablas comparativas montada en /unit/u1/conceptos
+Stopped at: Completed 02-04-PLAN.md — 6 ejercicios guiados SQL con mini-editor, pistas, soluciones y validacion automatica montados en /unit/u1/ejercicios
 Resume file: None

@@ -35,7 +35,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SQL-05**: Manejo de errores con mensajes claros en espanol
 - [x] **SQL-06**: Boton reset de BD para restaurar estado original
 - [x] **SQL-07**: Visor de esquema de BD (toggle show/hide)
-- [ ] **SQL-08**: 6 ejercicios guiados (basico a avanzado) con hints y soluciones
+- [x] **SQL-08**: 6 ejercicios guiados (basico a avanzado) con hints y soluciones
 - [x] **SQL-09**: Botones de consultas rapidas para explorar tablas
 
 ### Quiz
@@ -131,7 +131,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SQL-05 | Phase 2 | Complete |
 | SQL-06 | Phase 2 | Complete |
 | SQL-07 | Phase 2 | Complete |
-| SQL-08 | Phase 2 | Pending |
+| SQL-08 | Phase 2 | Complete |
 | SQL-09 | Phase 2 | Complete |
 | QUIZ-01 | Phase 3 | Pending |
 | QUIZ-02 | Phase 3 | Pending |
