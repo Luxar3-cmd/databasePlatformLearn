@@ -995,6 +995,17 @@ export function Topic14() {
 				</div>
 			</div>
 
+			<Callout type="example" title="Modelamiento conceptual: sistema de inscripcion UTFSM">
+				Imagina que la UTFSM te pide modelar el sistema de inscripcion de asignaturas. En la etapa
+				de Analisis identificas las <strong>entidades</strong>:{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">ALUMNO</code>,{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">ASIGNATURA</code>,{' '}
+				<code className="text-xs bg-zinc-800 px-1 rounded">PROFESOR</code>. Luego capturas las{' '}
+				<strong>relaciones</strong>: un alumno <em>se inscribe en</em> muchas asignaturas, un
+				profesor <em>dicta</em> varias asignaturas. Eso es un modelo conceptual — describes la
+				realidad antes de pensar en tablas o SQL.
+			</Callout>
+
 			<h3 className="text-base font-semibold text-zinc-200 mt-6">
 				Niveles organizacionales y tipos de SI
 			</h3>
@@ -1077,6 +1088,15 @@ export function Topic14() {
 				</div>
 			</div>
 
+			<Callout type="example" title="OLAP en accion: Falabella decide donde abrir una tienda">
+				Falabella quiere evaluar si abrir una nueva tienda en Vina del Mar. Para eso, analiza 5
+				anos de datos historicos de ventas por{' '}
+				<strong>comuna, temporada y categoria de producto</strong>. No esta registrando transacciones
+				nuevas — esta consultando millones de transacciones pasadas para tomar una decision
+				estrategica. Eso es OLAP: grandes volumenes de datos historicos, pocas consultas, alto valor
+				para la toma de decisiones.
+			</Callout>
+
 			<h3 className="text-base font-semibold text-zinc-200 mt-4">
 				Data Warehouse y Business Intelligence
 			</h3>
@@ -1102,6 +1122,16 @@ export function Topic14() {
 				generan grandes volumenes de datos — una &ldquo;mina de oro&rdquo; para inferir el futuro via
 				analisis estadistico.
 			</p>
+
+			<Callout type="example" title="ETL y Data Warehouse: como lo hace Netflix">
+				Cada vez que ves un capitulo, Netflix registra la transaccion en su sistema{' '}
+				<strong>OLTP</strong>: que viste, cuando, en que dispositivo, cuanto tiempo. Cada noche, el
+				proceso <strong>ETL</strong> entra en accion: <em>extrae</em> esos datos de produccion,{' '}
+				<em>transforma</em> (limpia duplicados, calcula metricas como porcentaje completado) y{' '}
+				<em>carga</em> todo en el <strong>Data Warehouse</strong>. De ahi, los algoritmos de
+				recomendacion analizan patrones de millones de usuarios para sugerirte la proxima serie. Es
+				el ciclo completo: OLTP → ETL → DW → analisis OLAP.
+			</Callout>
 
 			<Callout type="example" title="Business Intelligence (BI)">
 				Concepto integrador que engloba el Data Warehouse, los sistemas OLAP y los algoritmos de Data
