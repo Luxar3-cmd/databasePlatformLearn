@@ -90,10 +90,10 @@ Plans:
   1. La plataforma es accesible desde una URL publica (Vercel o GitHub Pages) sin instalar nada
   2. Hacer refresh en cualquier ruta (ej: `/unit/1/editor`) no devuelve 404
   3. El build estatico (`npm run build`) completa sin errores y el output es deployable
-**Plans**: TBD
+**Plans:** 1 plan
 
 Plans:
-- [ ] 04-01: Configurar base path en `vite.config.ts`, solucionar SPA 404 on refresh (404.html o Vercel rewrite), deploy y validar todas las rutas
+- [ ] 04-01-PLAN.md — vercel.json con SPA rewrite, README actualizado, deploy a produccion y verificacion de 5 rutas
 
 ## Progress
 
