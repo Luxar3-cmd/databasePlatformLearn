@@ -106,4 +106,4 @@ Phases execute in numeric order: 1 → 2 → 2.1 → 3 → 4
 | 2. Contenido U1 y Editor SQL | 5/5 | Complete   | 2026-03-03 |
 | 2.1 Ejemplos didacticos U1 | 0/2 | Not started | - |
 | 3. Autoevaluacion | 0/3 | Not started | - |
-| 4. Deploy | 1/1 | Complete   | 2026-03-06 |
+| 4. Deploy | 1/1 | Complete    | 2026-03-06 |
