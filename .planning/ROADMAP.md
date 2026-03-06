@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Fundacion** - Shell visual, arquitectura modular y tipos TypeScript base
 - [x] **Phase 2: Contenido U1 y Editor SQL** - Seccion Conceptos completa y editor SQL interactivo con AlaSQL (completed 2026-03-03)
 - [ ] **Phase 3: Autoevaluacion** - Quiz, Cheat Sheet y Ejercicios Resueltos para U1
-- [ ] **Phase 4: Deploy** - Deploy estatico funcional con todas las rutas validadas
+- [x] **Phase 4: Deploy** - Deploy estatico funcional con todas las rutas validadas (completed 2026-03-06)
 
 ## Phase Details
 
@@ -90,7 +90,7 @@ Plans:
   1. La plataforma es accesible desde una URL publica (Vercel o GitHub Pages) sin instalar nada
   2. Hacer refresh en cualquier ruta (ej: `/unit/1/editor`) no devuelve 404
   3. El build estatico (`npm run build`) completa sin errores y el output es deployable
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
 - [ ] 04-01-PLAN.md — vercel.json con SPA rewrite, README actualizado, deploy a produccion y verificacion de 5 rutas
@@ -106,4 +106,4 @@ Phases execute in numeric order: 1 → 2 → 2.1 → 3 → 4
 | 2. Contenido U1 y Editor SQL | 5/5 | Complete   | 2026-03-03 |
 | 2.1 Ejemplos didacticos U1 | 0/2 | Not started | - |
 | 3. Autoevaluacion | 0/3 | Not started | - |
-| 4. Deploy | 0/1 | Not started | - |
+| 4. Deploy | 1/1 | Complete   | 2026-03-06 |

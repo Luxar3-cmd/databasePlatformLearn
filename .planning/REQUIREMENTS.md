@@ -65,7 +65,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **NFR-01**: Dark mode profesional con tipografia clara para codigo y texto
 - [x] **NFR-02**: Responsive desktop y tablet
 - [x] **NFR-03**: Arquitectura modular — agregar unidades sin tocar componentes existentes
-- [ ] **NFR-04**: Deploy estatico a Vercel o GitHub Pages
+- [x] **NFR-04**: Deploy estatico a Vercel o GitHub Pages
 - [x] **NFR-05**: Todo el contenido e interfaz en espanol
 
 ## v2 Requirements
@@ -146,7 +146,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EJER-02 | Phase 3 | Complete |
 | EJER-03 | Phase 3 | Complete |
 | EJER-04 | Phase 3 | Complete |
-| NFR-04 | Phase 4 | Pending |
+| NFR-04 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 33 total
