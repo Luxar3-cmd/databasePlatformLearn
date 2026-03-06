@@ -1,109 +1,30 @@
 # Roadmap: BDD Lab UTFSM
 
-## Overview
+## Milestones
 
-La plataforma se construye en cuatro fases. Primero se establece la arquitectura y shell visual sin contenido real. Luego se carga el contenido core de U1 junto con el editor SQL interactivo, que es el diferenciador tecnico del proyecto. Despues se completan las herramientas de autoevaluacion (quiz, cheat sheet, ejercicios resueltos). Finalmente se hace el deploy estatico y se valida que todo funciona en produccion.
+- ✅ **v1.0 BDD Lab UTFSM MVP** — Phases 1-4 (shipped 2026-03-06)
 
 ## Phases
 
-**Phase Numbering:**
-- Integer phases (1, 2, 3): Planned milestone work
-- Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
+<details>
+<summary>✅ v1.0 BDD Lab UTFSM MVP (Phases 1-4) — SHIPPED 2026-03-06</summary>
 
-Decimal phases appear between their surrounding integers in numeric order.
+- [x] Phase 1: Fundacion (3/3 plans) — completed 2026-03-02
+- [x] Phase 2: Contenido U1 y Editor SQL (5/5 plans) — completed 2026-03-03
+- [x] Phase 2.1: Ejemplos didacticos vida real para conceptos U1 (2/2 plans, INSERTED) — completed 2026-03-03
+- [x] Phase 3: Autoevaluacion (3/3 plans) — completed 2026-03-06
+- [x] Phase 4: Deploy (1/1 plan) — completed 2026-03-06
 
-- [x] **Phase 1: Fundacion** - Shell visual, arquitectura modular y tipos TypeScript base
-- [x] **Phase 2: Contenido U1 y Editor SQL** - Seccion Conceptos completa y editor SQL interactivo con AlaSQL (completed 2026-03-03)
-- [ ] **Phase 3: Autoevaluacion** - Quiz, Cheat Sheet y Ejercicios Resueltos para U1
-- [x] **Phase 4: Deploy** - Deploy estatico funcional con todas las rutas validadas (completed 2026-03-06)
+Full details: `.planning/milestones/v1.0-ROADMAP.md`
 
-## Phase Details
-
-### Phase 1: Fundacion
-**Goal**: El estudiante puede navegar por la estructura completa de la plataforma — sidebar con U1 activa y U2-U6 bloqueadas, sub-navegacion por secciones, header, footer, dark mode — aunque las secciones de contenido esten vacias
-**Depends on**: Nothing (first phase)
-**Requirements**: LAYOUT-01, LAYOUT-02, LAYOUT-03, LAYOUT-04, LAYOUT-05, LAYOUT-06, LAYOUT-07, NFR-01, NFR-02, NFR-03, NFR-05
-**Success Criteria** (what must be TRUE):
-  1. El estudiante ve el sidebar con U1 marcada como activa y U2-U6 visualmente bloqueadas con icono de candado
-  2. El estudiante puede navegar entre las sub-secciones de U1 (Conceptos, Ejercicios, Editor SQL, Quiz, Cheat Sheet) y la URL cambia
-  3. El sidebar se colapsa en mobile/tablet y el contenido ocupa el ancho completo
-  4. Todo el texto e interfaz esta en espanol y el fondo es dark mode sin colores hardcodeados
-  5. Agregar una nueva unidad requiere solo crear un archivo de datos, sin tocar componentes existentes
-**Plans:** 3 plans
-
-Plans:
-- [x] 01-01-PLAN.md — Scaffold Vite + React 19 + Tailwind v4 + dark mode + data layer con tipos y unidades
-- [x] 01-02-PLAN.md — AppLayout + Sidebar con lock states + Header + Footer + React Router
-- [x] 01-03-PLAN.md — InfoGeneral + placeholders + sidebar responsive mobile + verificacion visual
-
-### Phase 2: Contenido U1 y Editor SQL
-**Goal**: El estudiante puede leer los conceptos completos de la Unidad 1 y ejecutar queries SQL reales contra una base de datos universitaria precargada directamente en el browser
-**Depends on**: Phase 1
-**Requirements**: CONT-01, CONT-02, CONT-03, CONT-04, CONT-05, CONT-06, SQL-01, SQL-02, SQL-03, SQL-04, SQL-05, SQL-06, SQL-07, SQL-08, SQL-09
-**Success Criteria** (what must be TRUE):
-  1. El estudiante puede leer las secciones 1.1, 1.2, 1.3 y 1.4 con definiciones, tablas comparativas y listados fieles al temario oficial
-  2. El estudiante escribe un SELECT en el editor, presiona Ctrl+Enter o el boton Ejecutar, y ve los resultados en una tabla
-  3. Si el estudiante escribe SQL invalido, ve un mensaje de error claro en espanol (no el mensaje raw de AlaSQL)
-  4. El estudiante puede ver el esquema de la BD universitaria (5 tablas con columnas y tipos) y resetear la BD al estado original
-  5. El estudiante puede seguir 6 ejercicios guiados de dificultad progresiva con hints y ver la solucion
-**Plans:** 5/5 plans complete
-
-Plans:
-- [x] 02-01-PLAN.md — Instalar dependencias, validar AlaSQL en Vite 7, motor SQL singleton con BD universitaria UTFSM, tipos TypeScript
-- [x] 02-02-PLAN.md — Editor SQL interactivo: useSqlEngine hook, CodeMirror 6, tabla resultados, schema viewer, consultas rapidas, reset
-- [x] 02-03-PLAN.md — Contenido Conceptos U1 (1.1-1.4): tabs, callout boxes, tablas comparativas, contenido fiel al temario oficial
-- [x] 02-04-PLAN.md — 6 ejercicios guiados SQL con mini-editor, pistas, soluciones, validacion automatica
-- [x] 02-05-PLAN.md — Verificacion integracion + checkpoint visual de toda la fase
-
-### Phase 02.1: Ejemplos didacticos vida real para conceptos U1 (INSERTED)
-
-**Goal:** Cada concepto clave de U1 tiene al menos un ejemplo concreto de vida real (UTFSM o empresas tech) insertado inline con tono coloquial, haciendo tangibles los conceptos abstractos del temario
-**Requirements**: EJ-VIDA-01, EJ-VIDA-02, EJ-VIDA-03, EJ-VIDA-04
-**Depends on:** Phase 02
-**Plans:** 2/2 plans complete
-
-Plans:
-- [ ] 02.1-01-PLAN.md — Ejemplos vida real en Topic11 (Dato, Informacion, BD) y Topic12 (redundancia, inconsistencia, enfoque BD)
-- [ ] 02.1-02-PLAN.md — Ejemplos vida real en Topic13 (tipos BD, relacional, NoSQL, OLTP/OLAP) y Topic14 (modelamiento, DW/ETL)
-
-### Phase 3: Autoevaluacion
-**Goal**: El estudiante puede autoevaluarse con un quiz de seleccion multiple, consultar un cheat sheet visual de referencia, y practicar con ejercicios resueltos paso a paso — todo para la Unidad 1
-**Depends on**: Phase 2
-**Requirements**: QUIZ-01, QUIZ-02, QUIZ-03, CHEAT-01, CHEAT-02, CHEAT-03, CHEAT-04, CHEAT-05, CHEAT-06, EJER-01, EJER-02, EJER-03, EJER-04
-**Success Criteria** (what must be TRUE):
-  1. El estudiante completa el quiz respondiendo 10+ preguntas una por una y ve feedback inmediato por pregunta
-  2. Al terminar el quiz, el estudiante ve su score final y puede intentarlo de nuevo con preguntas en orden diferente
-  3. El estudiante puede consultar el cheat sheet con definiciones clave, tabla comparativa, mapa de tipos de BD y etapas de diseno sin salir de la plataforma
-  4. El estudiante puede trabajar ejercicios resueltos de los 4 tipos (desventajas archivos, clasificar BD, niveles organizacionales, problemas vs soluciones) y ver la solucion paso a paso
-**Plans:** 3 plans
-
-Plans:
-- [ ] 03-01-PLAN.md — Quiz MCQ wizard: 12+ preguntas U1 con feedback inmediato, score final, randomizacion y retry
-- [ ] 03-02-PLAN.md — Cheat sheet visual: 6 secciones de referencia rapida con sticky nav y scroll por anclas
-- [ ] 03-03-PLAN.md — Ejercicios resueltos: 8 ejercicios conceptuales con revelacion progresiva, integrados en tabs con ejercicios SQL
-
-### Phase 4: Deploy
-**Goal**: La plataforma esta disponible publicamente en una URL permanente, todas las rutas funcionan al hacer refresh, y el build estatico es el artefacto que se despliega
-**Depends on**: Phase 3
-**Requirements**: NFR-04
-**Success Criteria** (what must be TRUE):
-  1. La plataforma es accesible desde una URL publica (Vercel o GitHub Pages) sin instalar nada
-  2. Hacer refresh en cualquier ruta (ej: `/unit/1/editor`) no devuelve 404
-  3. El build estatico (`npm run build`) completa sin errores y el output es deployable
-**Plans:** 1/1 plans complete
-
-Plans:
-- [ ] 04-01-PLAN.md — vercel.json con SPA rewrite, README actualizado, deploy a produccion y verificacion de 5 rutas
+</details>
 
 ## Progress
 
-**Execution Order:**
-Phases execute in numeric order: 1 → 2 → 2.1 → 3 → 4
-
-| Phase | Plans Complete | Status | Completed |
-|-------|----------------|--------|-----------|
-| 1. Fundacion | 3/3 | Complete | 2026-03-02 |
-| 2. Contenido U1 y Editor SQL | 5/5 | Complete   | 2026-03-03 |
-| 2.1 Ejemplos didacticos U1 | 0/2 | Not started | - |
-| 3. Autoevaluacion | 0/3 | Not started | - |
-| 4. Deploy | 1/1 | Complete    | 2026-03-06 |
+| Phase | Milestone | Plans Complete | Status | Completed |
+|-------|-----------|----------------|--------|-----------|
+| 1. Fundacion | v1.0 | 3/3 | Complete | 2026-03-02 |
+| 2. Contenido U1 y Editor SQL | v1.0 | 5/5 | Complete | 2026-03-03 |
+| 2.1 Ejemplos didacticos U1 | v1.0 | 2/2 | Complete | 2026-03-03 |
+| 3. Autoevaluacion | v1.0 | 3/3 | Complete | 2026-03-06 |
+| 4. Deploy | v1.0 | 1/1 | Complete | 2026-03-06 |

@@ -12,28 +12,29 @@ Los estudiantes pueden practicar SQL y autoevaluarse sobre los conceptos del cur
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ Layout con sidebar de unidades (U1 activa, U2-U6 bloqueadas), header, footer — v1.0
+- ✓ Navegacion entre unidades con sub-secciones: Conceptos, Ejercicios, Editor SQL, Quiz, Cheat Sheet — v1.0
+- ✓ Seccion Conceptos U1 completa (1.1 a 1.4 del temario oficial) con ejemplos de vida real — v1.0
+- ✓ Editor SQL interactivo con AlaSQL (BD universitaria precargada, 6 ejercicios guiados) — v1.0
+- ✓ Quiz de autoevaluacion U1 (13 preguntas con retroalimentacion inmediata y shuffle) — v1.0
+- ✓ Cheat Sheet U1 (resumen visual con sticky nav, 6 secciones) — v1.0
+- ✓ Ejercicios resueltos paso a paso para U1 (8 ejercicios con reveal secuencial) — v1.0
+- ✓ Dark mode profesional, responsive (sidebar colapsable en mobile) — v1.0
+- ✓ Arquitectura modular para agregar unidades futuras sin refactoring — v1.0
+- ✓ Deploy estatico a Vercel con SPA routing — v1.0
 
 ### Active
 
-- [ ] Layout con sidebar de unidades (U1 activa, U2-U6 bloqueadas), header, footer
-- [ ] Navegacion entre unidades con sub-secciones: Conceptos, Ejercicios, Editor SQL, Quiz, Cheat Sheet
-- [ ] Seccion Conceptos U1 completa (1.1 a 1.4 del temario oficial)
-- [ ] Editor SQL interactivo con AlaSQL (BD universitaria precargada, 6 ejercicios guiados)
-- [ ] Quiz de autoevaluacion U1 (10+ preguntas con retroalimentacion inmediata)
-- [ ] Cheat Sheet U1 (resumen visual de definiciones, tablas comparativas, etapas de diseno)
-- [ ] Ejercicios resueltos paso a paso para U1
-- [ ] Dark mode profesional, responsive (sidebar colapsable en mobile)
-- [ ] Arquitectura modular para agregar unidades futuras sin refactoring
-- [ ] Deploy estatico (Vercel o GitHub Pages)
+- [ ] Contenido Unidad 2 (cuando avance el semestre)
+- [ ] Contenido Unidades 3-6 (progresivamente)
+- [ ] Tracking de progreso en localStorage (quiz scores, ejercicios completados)
 
 ### Out of Scope
 
 - Backend / autenticacion de usuarios — todo es client-side, acceso publico
-- Unidades 2-6 con contenido — solo placeholders bloqueados en v1
 - Secciones Tareas, Certamenes, Ayudantias — solo placeholders en v1
-- Tracking de progreso persistente — sin localStorage ni BD para v1
 - Mobile app nativa — web responsive es suficiente
+- Tracking de progreso persistente en BD — localStorage es suficiente si se necesita
 
 ## Context
 
@@ -59,10 +60,20 @@ Los estudiantes pueden practicar SQL y autoevaluarse sobre los conceptos del cur
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| AlaSQL como motor SQL en browser | Ejecuta SQL real sin backend, suficiente para ejercicios introductorios | — Pending |
-| Sin backend / sin auth | Simplifica deploy y desarrollo, acceso publico es aceptable para material de ayudantia | — Pending |
-| Arquitectura modular por unidad | Permite agregar U2-U6 sin tocar componentes, solo agregar data files y desbloquear | — Pending |
-| Dark mode como unico tema | Reduce scope, profesional para contenido tecnico/codigo | — Pending |
+| AlaSQL como motor SQL en browser | Ejecuta SQL real sin backend, suficiente para ejercicios introductorios | ✓ Funcionó bien — sin problemas de compatibilidad con Vite 7 |
+| Sin backend / sin auth | Simplifica deploy y desarrollo, acceso publico es aceptable para material de ayudantia | ✓ Deploy estatico a Vercel sin friccion |
+| Arquitectura modular por unidad | Permite agregar U2-U6 sin tocar componentes, solo agregar data files y desbloquear | ✓ Patron establecido, listo para U2+ |
+| Dark mode como unico tema | Reduce scope, profesional para contenido tecnico/codigo | ✓ Resultado visual limpio y consistente |
+| createBrowserRouter + vercel.json rewrites | SPA routing con history API, fallback a index.html en produccion | ✓ 5 rutas verificadas sin 404 en refresh |
+| Fisher-Yates shuffle en quiz | Preguntas y opciones randomizadas por intento sin depender de indice positional | ✓ Implementacion robusta |
+
+## Current State (v1.0)
+
+- **URL produccion:** https://database-platform-learn-l8h1uw30d-luxar3-cmds-projects.vercel.app/
+- **Stack:** React 19, Vite 7, TypeScript, Tailwind v4, React Router v7, AlaSQL 4.x, CodeMirror 6
+- **Cobertura:** Unidad 1 completa (Conceptos, Editor SQL, Quiz, Cheat Sheet, Ejercicios)
+- **LOC:** 3,696 TypeScript en src/
+- **Proxima unidad:** U2 cuando avance el semestre
 
 ---
-*Last updated: 2026-03-02 after initialization*
+*Last updated: 2026-03-06 after v1.0 milestone*
