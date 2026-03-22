@@ -1,54 +1,55 @@
 export default function InfoGeneral() {
 	return (
-		<div className="max-w-3xl mx-auto space-y-6">
-			{/* Header principal */}
-			<div className="p-8 bg-zinc-900/50 border border-zinc-800 rounded-lg">
-				<h1 className="text-3xl font-bold text-zinc-100 mb-1">BDD Lab UTFSM</h1>
-				<p className="text-zinc-400 text-lg">Laboratorio Interactivo — INF-239 Bases de Datos</p>
+		<div className="max-w-3xl mx-auto space-y-8">
+			{/* Hero */}
+			<div className="p-10 bg-stone-900/50 border border-stone-800 rounded-lg">
+				<h1 className="font-serif text-4xl font-semibold text-stone-100 tracking-tight mb-2">
+					BDD Lab UTFSM
+				</h1>
+				<p className="text-stone-400 text-lg font-light">
+					Laboratorio Interactivo — INF-239 Bases de Datos
+				</p>
+				<div className="mt-4 h-px bg-gradient-to-r from-amber-500/40 via-amber-500/10 to-transparent" />
+				<p className="mt-4 text-stone-500 text-sm leading-relaxed max-w-xl">
+					Plataforma de aprendizaje interactivo para el curso de Bases de Datos de la Universidad
+					Técnica Federico Santa María. Practica SQL directamente en el navegador, sin instalar nada.
+				</p>
 			</div>
 
 			{/* Info del curso */}
 			<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-				<div className="p-5 bg-zinc-900/50 border border-zinc-800 rounded-lg">
-					<p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Profesor</p>
-					<p className="text-zinc-300 font-medium">Por definir</p>
+				<div className="p-5 bg-stone-900/50 border border-stone-800 rounded-lg">
+					<p className="text-stone-500 text-xs uppercase tracking-wider mb-1">Profesor</p>
+					<p className="text-stone-200 font-medium">Por definir</p>
 				</div>
-				<div className="p-5 bg-zinc-900/50 border border-zinc-800 rounded-lg">
-					<p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Semestre</p>
-					<p className="text-zinc-300 font-medium">2026-1</p>
+				<div className="p-5 bg-stone-900/50 border border-stone-800 rounded-lg">
+					<p className="text-stone-500 text-xs uppercase tracking-wider mb-1">Semestre</p>
+					<p className="text-stone-200 font-medium">2026-1</p>
 				</div>
-				<div className="p-5 bg-zinc-900/50 border border-zinc-800 rounded-lg">
-					<p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Curso</p>
-					<p className="text-zinc-300 font-medium">INF-239</p>
+				<div className="p-5 bg-stone-900/50 border border-stone-800 rounded-lg">
+					<p className="text-stone-500 text-xs uppercase tracking-wider mb-1">Curso</p>
+					<p className="text-stone-200 font-medium">INF-239</p>
 				</div>
-			</div>
-
-			{/* Descripcion */}
-			<div className="p-6 bg-zinc-900/50 border border-zinc-800 rounded-lg">
-				<p className="text-zinc-400 leading-relaxed">
-					Plataforma de aprendizaje interactivo para el curso de Bases de Datos de la Universidad
-					Tecnica Federico Santa Maria. Practica SQL directamente en el browser, sin instalar nada.
-				</p>
 			</div>
 
 			{/* Como usar */}
-			<div className="p-6 bg-zinc-900/50 border border-zinc-800 rounded-lg">
-				<h2 className="text-zinc-100 font-semibold mb-4">Como usar esta plataforma</h2>
-				<ul className="space-y-3">
-					<li className="flex gap-3">
-						<span className="text-indigo-500 font-bold shrink-0">1.</span>
-						<span className="text-zinc-400">Navega por las unidades en el sidebar</span>
+			<div className="p-6 bg-stone-900/50 border border-stone-800 rounded-lg">
+				<h2 className="font-serif text-xl text-stone-100 mb-5">Cómo usar esta plataforma</h2>
+				<ul className="space-y-4">
+					<li className="flex gap-4">
+						<span className="font-serif text-xl text-amber-400 shrink-0 leading-tight">1.</span>
+						<span className="text-stone-400 leading-relaxed">Navega por las unidades en el sidebar</span>
 					</li>
-					<li className="flex gap-3">
-						<span className="text-indigo-500 font-bold shrink-0">2.</span>
-						<span className="text-zinc-400">
+					<li className="flex gap-4">
+						<span className="font-serif text-xl text-amber-400 shrink-0 leading-tight">2.</span>
+						<span className="text-stone-400 leading-relaxed">
 							Cada unidad tiene secciones de Conceptos, Ejercicios, Editor SQL, Quiz y Cheat Sheet
 						</span>
 					</li>
-					<li className="flex gap-3">
-						<span className="text-indigo-500 font-bold shrink-0">3.</span>
-						<span className="text-zinc-400">
-							Comienza con la Unidad 1 — las demas se habilitaran progresivamente
+					<li className="flex gap-4">
+						<span className="font-serif text-xl text-amber-400 shrink-0 leading-tight">3.</span>
+						<span className="text-stone-400 leading-relaxed">
+							Comienza con la Unidad 1 — las demás se habilitarán progresivamente
 						</span>
 					</li>
 				</ul>

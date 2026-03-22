@@ -9,7 +9,7 @@ export default function AppLayout() {
 	const [collapsed, setCollapsed] = useState(false)
 
 	return (
-		<div className="flex h-screen bg-zinc-950 overflow-hidden">
+		<div className="flex h-screen bg-stone-950 overflow-hidden">
 			{/* Mobile overlay */}
 			{isOpen && (
 				<div

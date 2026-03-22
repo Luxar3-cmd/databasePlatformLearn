@@ -3,16 +3,16 @@ import { Callout } from '@/components/ui/Callout'
 export function Topic11() {
 	return (
 		<div className="space-y-6">
-			<h2 className="text-xl font-semibold text-zinc-100">1.1 Definicion de Bases de Datos</h2>
+			<h2 className="font-serif text-2xl font-semibold text-stone-100 tracking-tight">1.1 Definicion de Bases de Datos</h2>
 
-			<p className="text-zinc-300 leading-relaxed">
+			<p className="text-stone-300 leading-relaxed">
 				En las organizaciones se ha reconocido la necesidad de incorporar al dato como un recurso mas,
 				con costo y valor asociado. Su obtencion, almacenamiento y control involucran gastos, pero si
 				se considera el valor agregado que entrega para la toma de decisiones en forma oportuna, ese
 				gasto pasa a ser una inversion.
 			</p>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">Definiciones clave</h3>
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">Definiciones clave</h3>
 
 			<Callout type="definition" title="Dato">
 				Hechos relacionados con personas, objetos, eventos u otras entidades del mundo real (empresa,
@@ -23,10 +23,10 @@ export function Topic11() {
 
 			<Callout type="example" title="Dato en la UTFSM">
 				Imagina que eres alumno de la UTFSM. Tu RUT{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">12.345.678-9</code>, tu rol{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">201234567-8</code>, la nota{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">5.3</code> del certamen 1 de INF-239 y la
-				fecha <code className="text-xs bg-zinc-800 px-1 rounded">2026-03-15</code> son{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">12.345.678-9</code>, tu rol{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">201234567-8</code>, la nota{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">5.3</code> del certamen 1 de INF-239 y la
+				fecha <code className="text-xs bg-stone-800 px-1 rounded">2026-03-15</code> son{' '}
 				<strong>datos</strong>: hechos aislados almacenados en la BD de la universidad. Por si solos
 				no te dicen nada util.
 			</Callout>
@@ -61,43 +61,43 @@ export function Topic11() {
 				los comparten a la vez.
 			</Callout>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">Definicion tecnica</h3>
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">Definicion tecnica</h3>
 
-			<p className="text-zinc-300 leading-relaxed">
+			<p className="text-stone-300 leading-relaxed">
 				Desde una perspectiva tecnica, una BD es un gran repositorio donde hay un conjunto de archivos
 				relacionados entre si que pueden ser accesados por numerosos usuarios, a traves de distintos
 				medios. Tiene dos propiedades fundamentales:
 			</p>
-			<ul className="list-disc list-inside space-y-1 text-zinc-300 ml-4">
+			<ul className="list-disc list-inside space-y-2 text-stone-300 ml-4">
 				<li>
-					<span className="font-medium text-zinc-200">Integracion:</span> los archivos de datos han
+					<span className="font-medium text-stone-200">Integracion:</span> los archivos de datos han
 					sido logicamente organizados para reducir su redundancia y facilitar el acceso.
 				</li>
 				<li>
-					<span className="font-medium text-zinc-200">Comparticion:</span> todos los usuarios
+					<span className="font-medium text-stone-200">Comparticion:</span> todos los usuarios
 					calificados tienen acceso a los mismos datos, para usarlos en diferentes actividades.
 				</li>
 			</ul>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">Definicion organizacional</h3>
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">Definicion organizacional</h3>
 
-			<p className="text-zinc-300 leading-relaxed">
+			<p className="text-stone-300 leading-relaxed">
 				Desde una perspectiva organizacional, una BD se puede definir como un conjunto de{' '}
-				<span className="font-medium text-zinc-100">datos operacionales</span> relevantes para la
+				<span className="font-medium text-stone-100">datos operacionales</span> relevantes para la
 				toma de decisiones involucrada en algun nivel de la organizacion. La organizacion se visualiza
 				como una piramide de 3 niveles:
 			</p>
-			<ul className="list-disc list-inside space-y-1 text-zinc-300 ml-4">
+			<ul className="list-disc list-inside space-y-2 text-stone-300 ml-4">
 				<li>
-					<span className="font-medium text-zinc-200">Nivel Operacional:</span> datos del dia a dia
+					<span className="font-medium text-stone-200">Nivel Operacional:</span> datos del dia a dia
 					(cajeros, transacciones).
 				</li>
 				<li>
-					<span className="font-medium text-zinc-200">Nivel Tactico:</span> datos para control
+					<span className="font-medium text-stone-200">Nivel Tactico:</span> datos para control
 					gerencial (jefe de sucursal).
 				</li>
 				<li>
-					<span className="font-medium text-zinc-200">Nivel Estrategico:</span> datos para
+					<span className="font-medium text-stone-200">Nivel Estrategico:</span> datos para
 					planificacion a largo plazo (gerente general).
 				</li>
 			</ul>
@@ -111,12 +111,12 @@ export function Topic11() {
 				datos a distinto nivel de detalle.
 			</Callout>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">Operaciones CRUD sobre la BD</h3>
-			<p className="text-zinc-300 leading-relaxed">
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">Operaciones CRUD sobre la BD</h3>
+			<p className="text-stone-300 leading-relaxed">
 				Los usuarios interactuan con la BD a traves de 4 operaciones basicas (CRUD), soportadas por
 				el lenguaje SQL:
 			</p>
-			<ul className="list-disc list-inside space-y-1 text-zinc-300 ml-4">
+			<ul className="list-disc list-inside space-y-2 text-stone-300 ml-4">
 				<li>
 					<span className="font-mono text-blue-300">CREATE / INSERT</span> — Insertar datos nuevos
 				</li>
@@ -131,86 +131,86 @@ export function Topic11() {
 				</li>
 			</ul>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">Componentes del enfoque de BD</h3>
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">Componentes del enfoque de BD</h3>
 
 			<div className="space-y-3">
-				<div className="p-3 bg-zinc-900 border border-zinc-800 rounded-md">
-					<p className="text-sm font-medium text-zinc-200 mb-1">1. Base de Datos fisica</p>
-					<p className="text-sm text-zinc-400">
+				<div className="p-3 bg-stone-900 border border-stone-800 rounded-md">
+					<p className="text-sm font-medium text-stone-200 mb-1">1. Base de Datos fisica</p>
+					<p className="text-sm text-stone-400">
 						Lugar fisico donde quedan almacenados los valores de los datos. Puede ser centralizada
 						(un servidor central) o distribuida (distintos nodos de una red).
 					</p>
 				</div>
-				<div className="p-3 bg-zinc-900 border border-zinc-800 rounded-md">
-					<p className="text-sm font-medium text-zinc-200 mb-1">
+				<div className="p-3 bg-stone-900 border border-stone-800 rounded-md">
+					<p className="text-sm font-medium text-stone-200 mb-1">
 						2. Diccionario de Datos (Data Dictionary)
 					</p>
-					<p className="text-sm text-zinc-400">
+					<p className="text-sm text-stone-400">
 						Guarda una descripcion de los datos (metadatos): tipo, largo, propietario, tamaño de
 						registros, etc. Tambien llamado Repositorio, Catalogo, Schema o BD Logica.
 					</p>
 				</div>
-				<div className="p-3 bg-zinc-900 border border-zinc-800 rounded-md">
-					<p className="text-sm font-medium text-zinc-200 mb-1">
+				<div className="p-3 bg-stone-900 border border-stone-800 rounded-md">
+					<p className="text-sm font-medium text-stone-200 mb-1">
 						3. DBMS (Data Base Management System)
 					</p>
-					<p className="text-sm text-zinc-400">
+					<p className="text-sm text-stone-400">
 						Software (y a veces hardware y firmware) que permite manejar una o mas BD. Sus 3
 						funciones principales son:
 					</p>
-					<ul className="list-disc list-inside mt-2 space-y-1 text-sm text-zinc-400 ml-3">
+					<ul className="list-disc list-inside mt-2 space-y-2 text-sm text-stone-400 ml-3">
 						<li>
-							<span className="font-medium text-zinc-300">DDL</span> (Data Definition Language):
+							<span className="font-medium text-stone-300">DDL</span> (Data Definition Language):
 							especifica el tipo de dato, estructura logica y relaciones.
 						</li>
 						<li>
-							<span className="font-medium text-zinc-300">DML</span> (Data Manipulation Language):
+							<span className="font-medium text-stone-300">DML</span> (Data Manipulation Language):
 							permite almacenar, modificar y recuperar datos (SQL).
 						</li>
 						<li>
-							<span className="font-medium text-zinc-300">DCL</span> (Data Control Language):
+							<span className="font-medium text-stone-300">DCL</span> (Data Control Language):
 							controla acceso y define operaciones permitidas por usuario.
 						</li>
 					</ul>
 				</div>
-				<div className="p-3 bg-zinc-900 border border-zinc-800 rounded-md">
-					<p className="text-sm font-medium text-zinc-200 mb-1">4. Programas de Aplicacion</p>
-					<p className="text-sm text-zinc-400">
+				<div className="p-3 bg-stone-900 border border-stone-800 rounded-md">
+					<p className="text-sm font-medium text-stone-200 mb-1">4. Programas de Aplicacion</p>
+					<p className="text-sm text-stone-400">
 						Escritos por desarrolladores para poblar inicialmente la BD, mantenerla en el tiempo
 						(CUD del CRUD) y generar informacion a los usuarios via reportes, graficos, dashboards.
 					</p>
 				</div>
-				<div className="p-3 bg-zinc-900 border border-zinc-800 rounded-md">
-					<p className="text-sm font-medium text-zinc-200 mb-1">5. Interfaz de Usuario</p>
-					<p className="text-sm text-zinc-400">
+				<div className="p-3 bg-stone-900 border border-stone-800 rounded-md">
+					<p className="text-sm font-medium text-stone-200 mb-1">5. Interfaz de Usuario</p>
+					<p className="text-sm text-stone-400">
 						Lenguajes, menus, pantallas, sistemas Web, reconocimiento de voz, etc. que permiten a
 						los usuarios interactuar con los componentes del DBMS.
 					</p>
 				</div>
-				<div className="p-3 bg-zinc-900 border border-zinc-800 rounded-md">
-					<p className="text-sm font-medium text-zinc-200 mb-1">
+				<div className="p-3 bg-stone-900 border border-stone-800 rounded-md">
+					<p className="text-sm font-medium text-stone-200 mb-1">
 						6. Herramientas CASE (Computer-Aided Software Engineering)
 					</p>
-					<p className="text-sm text-zinc-400">
+					<p className="text-sm text-stone-400">
 						Herramientas automatizadas para el ciclo de vida del software. En BD ayudan a generar el
 						modelo de datos, algunas generan codigo SQL. Ejemplos: Erwin, EasyCASE, Oracle Designer,
 						MySQL Workbench.
 					</p>
 				</div>
-				<div className="p-3 bg-zinc-900 border border-zinc-800 rounded-md">
-					<p className="text-sm font-medium text-zinc-200 mb-1">7. Usuarios</p>
-					<p className="text-sm text-zinc-400">
-						Se clasifican en: <span className="text-zinc-300">Usuarios Finales</span> (ejecutivos,
+				<div className="p-3 bg-stone-900 border border-stone-800 rounded-md">
+					<p className="text-sm font-medium text-stone-200 mb-1">7. Usuarios</p>
+					<p className="text-sm text-stone-400">
+						Se clasifican en: <span className="text-stone-300">Usuarios Finales</span> (ejecutivos,
 						vendedores, secretarias — quienes usan la BD en su ciclo de vida),{' '}
-						<span className="text-zinc-300">Desarrolladores de Software</span> (analistas y
+						<span className="text-stone-300">Desarrolladores de Software</span> (analistas y
 						programadores que disenan aplicaciones), y{' '}
-						<span className="text-zinc-300">DBA (Data Base Administrator)</span> (responsable del
+						<span className="text-stone-300">DBA (Data Base Administrator)</span> (responsable del
 						diseno, construccion, implementacion y seguridad de la BD).
 					</p>
 				</div>
 			</div>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">
 				Implementacion del enfoque de BD: 3 etapas
 			</h3>
 			<div className="flex gap-2 flex-wrap">
@@ -232,8 +232,8 @@ export function Topic11() {
 					},
 				].map((e) => (
 					<div key={e.etapa} className={`flex-1 min-w-[200px] border rounded-md p-3 ${e.color}`}>
-						<p className="text-sm font-semibold text-zinc-200 mb-1">{e.etapa}</p>
-						<p className="text-xs text-zinc-400">{e.desc}</p>
+						<p className="text-sm font-semibold text-stone-200 mb-1">{e.etapa}</p>
+						<p className="text-xs text-stone-400">{e.desc}</p>
 					</div>
 				))}
 			</div>
@@ -244,12 +244,12 @@ export function Topic11() {
 export function Topic12() {
 	return (
 		<div className="space-y-6">
-			<h2 className="text-xl font-semibold text-zinc-100">
+			<h2 className="font-serif text-2xl font-semibold text-stone-100 tracking-tight">
 				1.2 Enfoque de Archivos vs Enfoque de BD
 			</h2>
 
-			<h3 className="text-base font-semibold text-zinc-200">Enfoque de Archivos (por Agregacion)</h3>
-			<p className="text-zinc-300 leading-relaxed">
+			<h3 className="font-serif text-lg font-semibold text-stone-200">Enfoque de Archivos (por Agregacion)</h3>
+			<p className="text-stone-300 leading-relaxed">
 				Enfoque utilizado en la decada de los 70. Cada aplicacion (remuneraciones, cuentas corrientes,
 				contabilidad, control de inventario, etc.) era disenada para satisfacer las necesidades de un
 				departamento, sin planificacion corporativa ni modelo que guiara el desarrollo. Cada programa
@@ -262,14 +262,14 @@ export function Topic12() {
 				controlada.
 			</Callout>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-2">
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-2">
 				Desventajas del Enfoque de Archivos
 			</h3>
-			<ul className="space-y-3 text-zinc-300">
+			<ul className="space-y-3 text-stone-300">
 				<li className="flex gap-2">
 					<span className="text-red-400 font-bold mt-0.5 shrink-0">✗</span>
 					<div>
-						<span className="font-medium text-zinc-200">Redundancia no controlada:</span> cada
+						<span className="font-medium text-stone-200">Redundancia no controlada:</span> cada
 						aplicacion tiene sus propios archivos, generando datos duplicados, perdida de espacio e
 						inconsistencias al actualizar.
 					</div>
@@ -277,7 +277,7 @@ export function Topic12() {
 				<li className="flex gap-2">
 					<span className="text-red-400 font-bold mt-0.5 shrink-0">✗</span>
 					<div>
-						<span className="font-medium text-zinc-200">
+						<span className="font-medium text-stone-200">
 							Dependencia de los datos del programa:
 						</span>{' '}
 						la definicion de los archivos iba incorporada dentro del programa (ej: COBOL). Cualquier
@@ -287,7 +287,7 @@ export function Topic12() {
 				<li className="flex gap-2">
 					<span className="text-red-400 font-bold mt-0.5 shrink-0">✗</span>
 					<div>
-						<span className="font-medium text-zinc-200">Pobre estandarizacion:</span> sin control
+						<span className="font-medium text-stone-200">Pobre estandarizacion:</span> sin control
 						centralizado, cada unidad usaba sus propios nombres y formatos. Generaba sinonimos
 						(distintos nombres para el mismo dato: #ESTUDIANTE vs ROL_ALUMNO) y homonimos (mismo
 						nombre para datos distintos: NOTA para calificacion vs NOTA para comentario en una orden
@@ -297,7 +297,7 @@ export function Topic12() {
 				<li className="flex gap-2">
 					<span className="text-red-400 font-bold mt-0.5 shrink-0">✗</span>
 					<div>
-						<span className="font-medium text-zinc-200">Inconsistencia de datos:</span> cuando el
+						<span className="font-medium text-stone-200">Inconsistencia de datos:</span> cuando el
 						dato existe en distintas partes y no se modifica en todas al hacer un UPDATE. Lleva a
 						reportes inconsistentes y reduce la confianza en la calidad de la BD.
 					</div>
@@ -305,7 +305,7 @@ export function Topic12() {
 				<li className="flex gap-2">
 					<span className="text-red-400 font-bold mt-0.5 shrink-0">✗</span>
 					<div>
-						<span className="font-medium text-zinc-200">Problemas con el cliente:</span> dificil
+						<span className="font-medium text-stone-200">Problemas con el cliente:</span> dificil
 						responder a nuevos requerimientos de informacion del usuario que no fueron considerados
 						en el diseno original.
 					</div>
@@ -313,14 +313,14 @@ export function Topic12() {
 				<li className="flex gap-2">
 					<span className="text-red-400 font-bold mt-0.5 shrink-0">✗</span>
 					<div>
-						<span className="font-medium text-zinc-200">Escasa posibilidad de compartir datos:</span>{' '}
+						<span className="font-medium text-stone-200">Escasa posibilidad de compartir datos:</span>{' '}
 						cada aplicacion tiene sus propios archivos; el mismo dato debe ingresarse varias veces.
 					</div>
 				</li>
 				<li className="flex gap-2">
 					<span className="text-red-400 font-bold mt-0.5 shrink-0">✗</span>
 					<div>
-						<span className="font-medium text-zinc-200">Baja productividad del desarrollador:</span>{' '}
+						<span className="font-medium text-stone-200">Baja productividad del desarrollador:</span>{' '}
 						debe disenar cada archivo, codificar las definiciones y escribir instrucciones de
 						Input/Output para cada nueva aplicacion.
 					</div>
@@ -330,7 +330,7 @@ export function Topic12() {
 			<Callout type="example" title="Redundancia e inconsistencia en la UTFSM">
 				La Direccion de Docencia guarda el nombre y direccion de cada alumno en su Excel. La DACE
 				tiene otra planilla con los mismos datos. En marzo, la alumna{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">Ana Soto</code> se cambia de casa y
+				<code className="text-xs bg-stone-800 px-1 rounded">Ana Soto</code> se cambia de casa y
 				actualiza su domicilio solo en Docencia. Ahora la DACE sigue con la direccion vieja — si
 				llega una carta importante, se pierde. Eso es <strong>redundancia no controlada</strong> que
 				derivó en <strong>inconsistencia</strong>: el mismo dato existe en dos lugares con valores
@@ -346,8 +346,8 @@ export function Topic12() {
 				<strong>inconsistencia de datos</strong>.
 			</Callout>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">Enfoque de Bases de Datos</h3>
-			<p className="text-zinc-300 leading-relaxed">
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">Enfoque de Bases de Datos</h3>
+			<p className="text-stone-300 leading-relaxed">
 				Los datos son vistos como un recurso que debe ser compartido entre diferentes usuarios. Cada
 				usuario puede tener una vision (view) propia de la BD. Los datos son independientes del
 				programa que los usa. Se tiene control centralizado via DBMS.
@@ -362,19 +362,19 @@ export function Topic12() {
 				vision unica.
 			</Callout>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-4">Tabla comparativa</h3>
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-4">Tabla comparativa</h3>
 
-			<div className="overflow-x-auto rounded-md border border-zinc-700">
+			<div className="overflow-x-auto rounded-md border border-stone-700">
 				<table className="w-full text-sm border-collapse">
 					<thead>
-						<tr className="bg-zinc-800">
-							<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<tr className="bg-stone-800">
+							<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 								Criterio
 							</th>
-							<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+							<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 								Enfoque Archivos
 							</th>
-							<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+							<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 								Enfoque BD
 							</th>
 						</tr>
@@ -388,20 +388,20 @@ export function Topic12() {
 							['Productividad', 'Baja (disenar todo)', 'Alta (DBMS gestiona I/O)'],
 							['Consistencia', 'Baja (datos duplicados)', 'Alta (dato en un lugar)'],
 						].map(([criterio, archivos, bd], i) => (
-							<tr key={criterio} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-								<td className="px-4 py-2.5 text-zinc-200 font-medium border-b border-zinc-800">
+							<tr key={criterio} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+								<td className="px-4 py-2.5 text-stone-200 font-medium border-b border-stone-800">
 									{criterio}
 								</td>
-								<td className="px-4 py-2.5 text-zinc-400 border-b border-zinc-800">{archivos}</td>
-								<td className="px-4 py-2.5 text-green-400 border-b border-zinc-800">{bd}</td>
+								<td className="px-4 py-2.5 text-stone-400 border-b border-stone-800">{archivos}</td>
+								<td className="px-4 py-2.5 text-green-400 border-b border-stone-800">{bd}</td>
 							</tr>
 						))}
 					</tbody>
 				</table>
 			</div>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">Ventajas del Enfoque de BD</h3>
-			<ul className="space-y-2 text-zinc-300">
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">Ventajas del Enfoque de BD</h3>
+			<ul className="space-y-2 text-stone-300">
 				{[
 					[
 						'Vision centralizada, compartida y unica de los datos',
@@ -431,7 +431,7 @@ export function Topic12() {
 					<li key={titulo} className="flex gap-2">
 						<span className="text-green-400 font-bold mt-0.5 shrink-0">✓</span>
 						<div>
-							<span className="font-medium text-zinc-200">{titulo}:</span> {desc}
+							<span className="font-medium text-stone-200">{titulo}:</span> {desc}
 						</div>
 					</li>
 				))}
@@ -443,28 +443,28 @@ export function Topic12() {
 export function Topic13() {
 	return (
 		<div className="space-y-6">
-			<h2 className="text-xl font-semibold text-zinc-100">1.3 Tipos de Bases de Datos</h2>
+			<h2 className="font-serif text-2xl font-semibold text-stone-100 tracking-tight">1.3 Tipos de Bases de Datos</h2>
 
-			<p className="text-zinc-300 leading-relaxed">
+			<p className="text-stone-300 leading-relaxed">
 				Las BD se pueden clasificar de distintas formas dependiendo de 6 criterios principales:
 			</p>
 
 			{/* Criterio 1 */}
 			<section>
-				<h3 className="text-base font-semibold text-zinc-200 mb-3">
+				<h3 className="font-serif text-lg font-semibold text-stone-200 mb-3">
 					1. Segun la estructura de datos utilizada
 				</h3>
-				<div className="overflow-x-auto rounded-md border border-zinc-700">
+				<div className="overflow-x-auto rounded-md border border-stone-700">
 					<table className="w-full text-sm border-collapse">
 						<thead>
-							<tr className="bg-zinc-800">
-								<th className="text-left px-4 py-2 text-zinc-300 font-semibold border-b border-zinc-700">
+							<tr className="bg-stone-800">
+								<th className="text-left px-4 py-2 text-stone-300 font-semibold border-b border-stone-700">
 									Tipo
 								</th>
-								<th className="text-left px-4 py-2 text-zinc-300 font-semibold border-b border-zinc-700">
+								<th className="text-left px-4 py-2 text-stone-300 font-semibold border-b border-stone-700">
 									Descripcion
 								</th>
-								<th className="text-left px-4 py-2 text-zinc-300 font-semibold border-b border-zinc-700">
+								<th className="text-left px-4 py-2 text-stone-300 font-semibold border-b border-stone-700">
 									Ejemplos
 								</th>
 							</tr>
@@ -497,12 +497,12 @@ export function Topic13() {
 									'OLAP Cubes',
 								],
 							].map(([tipo, desc, ej], i) => (
-								<tr key={tipo} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-									<td className="px-4 py-2.5 text-zinc-200 font-medium border-b border-zinc-800 whitespace-nowrap">
+								<tr key={tipo} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+									<td className="px-4 py-2.5 text-stone-200 font-medium border-b border-stone-800 whitespace-nowrap">
 										{tipo}
 									</td>
-									<td className="px-4 py-2.5 text-zinc-400 border-b border-zinc-800">{desc}</td>
-									<td className="px-4 py-2.5 text-zinc-500 border-b border-zinc-800 text-xs">
+									<td className="px-4 py-2.5 text-stone-400 border-b border-stone-800">{desc}</td>
+									<td className="px-4 py-2.5 text-stone-500 border-b border-stone-800 text-xs">
 										{ej}
 									</td>
 								</tr>
@@ -514,23 +514,23 @@ export function Topic13() {
 
 			<Callout type="example" title="Relacional vs NoSQL en la practica">
 				<strong>BD Relacional</strong> — la UTFSM guarda todos los alumnos en una tabla con columnas
-				fijas: <code className="text-xs bg-zinc-800 px-1 rounded">RUT</code>,{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">NOMBRE</code>,{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">CARRERA</code>. Cada fila tiene exactamente
+				fijas: <code className="text-xs bg-stone-800 px-1 rounded">RUT</code>,{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">NOMBRE</code>,{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">CARRERA</code>. Cada fila tiene exactamente
 				esas columnas — ni mas, ni menos. Eso es estructura rigida y predecible.
 				<br />
 				<br />
 				<strong>BD NoSQL</strong> — Airbnb usa MongoDB para almacenar propiedades. Una propiedad puede
-				tener <code className="text-xs bg-zinc-800 px-1 rounded">piscina: true</code> y{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">jacuzzi: false</code>; otra puede tener{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">estacionamiento: 2</code> y ninguna
+				tener <code className="text-xs bg-stone-800 px-1 rounded">piscina: true</code> y{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">jacuzzi: false</code>; otra puede tener{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">estacionamiento: 2</code> y ninguna
 				referencia a piscina. Esa variabilidad de campos por documento es imposible en una tabla
 				relacional sin agregar columnas vacias para todos.
 			</Callout>
 
 			{/* Criterio 2 */}
 			<section>
-				<h3 className="text-base font-semibold text-zinc-200 mb-3">
+				<h3 className="font-serif text-lg font-semibold text-stone-200 mb-3">
 					2. Segun el nivel organizacional que apoyan
 				</h3>
 				<div className="space-y-2">
@@ -548,27 +548,27 @@ export function Topic13() {
 						{
 							tipo: 'BD Estrategica (Data Warehouse - OLAP, Data Mining)',
 							desc: 'Apoya el nivel estrategico. Permite obtener conocimiento via algoritmos de Data Mining (Mineria de Datos). Enfoque descriptivo y predictivo.',
-							color: 'border-amber-700 bg-amber-950/20',
+							color: 'border-orange-700 bg-orange-950/20',
 						},
 					].map((item) => (
 						<div key={item.tipo} className={`border rounded-md p-3 ${item.color}`}>
-							<p className="text-sm font-semibold text-zinc-200 mb-1">{item.tipo}</p>
-							<p className="text-sm text-zinc-400">{item.desc}</p>
+							<p className="text-sm font-semibold text-stone-200 mb-1">{item.tipo}</p>
+							<p className="text-sm text-stone-400">{item.desc}</p>
 						</div>
 					))}
 				</div>
 
-				<div className="mt-4 overflow-x-auto rounded-md border border-zinc-700">
+				<div className="mt-4 overflow-x-auto rounded-md border border-stone-700">
 					<table className="w-full text-sm border-collapse">
 						<thead>
-							<tr className="bg-zinc-800">
-								<th className="text-left px-4 py-2 text-zinc-300 font-semibold border-b border-zinc-700">
+							<tr className="bg-stone-800">
+								<th className="text-left px-4 py-2 text-stone-300 font-semibold border-b border-stone-700">
 									Criterio
 								</th>
-								<th className="text-left px-4 py-2 text-zinc-300 font-semibold border-b border-zinc-700">
+								<th className="text-left px-4 py-2 text-stone-300 font-semibold border-b border-stone-700">
 									OLTP (Operacional)
 								</th>
-								<th className="text-left px-4 py-2 text-zinc-300 font-semibold border-b border-zinc-700">
+								<th className="text-left px-4 py-2 text-stone-300 font-semibold border-b border-stone-700">
 									OLAP (Analitico)
 								</th>
 							</tr>
@@ -582,12 +582,12 @@ export function Topic13() {
 								['Estructura', 'BD Relacional', 'BD Multidimensional (Data Warehouse)'],
 								['Sistemas', 'TPS, MIS (SIA)', 'DSS (Decision Support Systems)'],
 							].map(([criterio, oltp, olap], i) => (
-								<tr key={criterio} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-									<td className="px-4 py-2.5 text-zinc-200 font-medium border-b border-zinc-800">
+								<tr key={criterio} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+									<td className="px-4 py-2.5 text-stone-200 font-medium border-b border-stone-800">
 										{criterio}
 									</td>
-									<td className="px-4 py-2.5 text-zinc-400 border-b border-zinc-800">{oltp}</td>
-									<td className="px-4 py-2.5 text-zinc-400 border-b border-zinc-800">{olap}</td>
+									<td className="px-4 py-2.5 text-stone-400 border-b border-stone-800">{oltp}</td>
+									<td className="px-4 py-2.5 text-stone-400 border-b border-stone-800">{olap}</td>
 								</tr>
 							))}
 						</tbody>
@@ -598,7 +598,7 @@ export function Topic13() {
 			<Callout type="example" title="OLTP vs OLAP: Transbank y Falabella">
 				<strong>OLTP — Transbank</strong> procesa miles de pagos con tarjeta por segundo. Cada vez
 				que alguien paga en una tienda, hay un{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">INSERT</code> en la BD operacional: numero
+				<code className="text-xs bg-stone-800 px-1 rounded">INSERT</code> en la BD operacional: numero
 				de tarjeta, monto, comercio, fecha. Son transacciones cortas y repetitivas — eso es OLTP.
 				<br />
 				<br />
@@ -610,14 +610,14 @@ export function Topic13() {
 
 			{/* Criterio 3 */}
 			<section>
-				<h3 className="text-base font-semibold text-zinc-200 mb-3">
+				<h3 className="font-serif text-lg font-semibold text-stone-200 mb-3">
 					3. Segun el tipo de dato almacenado
 				</h3>
-				<ul className="space-y-2 text-zinc-300">
+				<ul className="space-y-2 text-stone-300">
 					<li className="flex gap-2">
 						<span className="shrink-0 mt-0.5 text-blue-400 font-bold">→</span>
 						<div>
-							<span className="font-medium text-zinc-200">Estructurados y precisos:</span> BD
+							<span className="font-medium text-stone-200">Estructurados y precisos:</span> BD
 							Relacional. Todas las filas tienen el mismo tipo y largo; las columnas son del mismo
 							tipo de dato.
 						</div>
@@ -625,7 +625,7 @@ export function Topic13() {
 					<li className="flex gap-2">
 						<span className="shrink-0 mt-0.5 text-purple-400 font-bold">→</span>
 						<div>
-							<span className="font-medium text-zinc-200">Agregados:</span> BD Multidimensional.
+							<span className="font-medium text-stone-200">Agregados:</span> BD Multidimensional.
 							Valores que resumen transacciones (ej: suma de ventas por trimestre, sucursal y
 							categoria de producto).
 						</div>
@@ -633,14 +633,14 @@ export function Topic13() {
 					<li className="flex gap-2">
 						<span className="shrink-0 mt-0.5 text-green-400 font-bold">→</span>
 						<div>
-							<span className="font-medium text-zinc-200">Semiestructurados:</span> BD de documentos
+							<span className="font-medium text-stone-200">Semiestructurados:</span> BD de documentos
 							(XML, JSON). Usadas en Sistemas de Informacion Geografica (SIG), bibliotecas, etc.
 						</div>
 					</li>
 					<li className="flex gap-2">
-						<span className="shrink-0 mt-0.5 text-amber-400 font-bold">→</span>
+						<span className="shrink-0 mt-0.5 text-orange-400 font-bold">→</span>
 						<div>
-							<span className="font-medium text-zinc-200">No estructurados:</span> BD NoSQL (Not
+							<span className="font-medium text-stone-200">No estructurados:</span> BD NoSQL (Not
 							Only SQL). No requieren estructuras rigidas. Nacen con el Big Data y las redes
 							sociales. Ejemplos: MongoDB, Redis, Cassandra, CouchDB.
 						</div>
@@ -650,14 +650,14 @@ export function Topic13() {
 
 			{/* Criterio 4 */}
 			<section>
-				<h3 className="text-base font-semibold text-zinc-200 mb-3">
+				<h3 className="font-serif text-lg font-semibold text-stone-200 mb-3">
 					4. Segun la ubicacion de la copia principal de los datos
 				</h3>
-				<ul className="space-y-2 text-zinc-300">
+				<ul className="space-y-2 text-stone-300">
 					<li className="flex gap-2">
 						<span className="shrink-0 mt-0.5 text-blue-400 font-bold">→</span>
 						<div>
-							<span className="font-medium text-zinc-200">
+							<span className="font-medium text-stone-200">
 								Basada en memoria principal — in-memory (1 nivel):
 							</span>{' '}
 							datos en RAM. Acceso muy rapido, pero volatil (se pierden si el sistema falla). Usada
@@ -667,15 +667,15 @@ export function Topic13() {
 					<li className="flex gap-2">
 						<span className="shrink-0 mt-0.5 text-green-400 font-bold">→</span>
 						<div>
-							<span className="font-medium text-zinc-200">Basada en disco (2 niveles):</span> nivel
+							<span className="font-medium text-stone-200">Basada en disco (2 niveles):</span> nivel
 							1 es la memoria principal (temporal), nivel 2 es el disco (permanente). Forma de
 							trabajo de los RDBMS tradicionales.
 						</div>
 					</li>
 					<li className="flex gap-2">
-						<span className="shrink-0 mt-0.5 text-amber-400 font-bold">→</span>
+						<span className="shrink-0 mt-0.5 text-orange-400 font-bold">→</span>
 						<div>
-							<span className="font-medium text-zinc-200">
+							<span className="font-medium text-stone-200">
 								Basada en almacenamiento terciario (3 niveles):
 							</span>{' '}
 							agrega un nivel 3 de almacenamiento offline (disco externo, pendrive, cinta
@@ -687,29 +687,29 @@ export function Topic13() {
 
 			{/* Criterio 5 */}
 			<section>
-				<h3 className="text-base font-semibold text-zinc-200 mb-3">
+				<h3 className="font-serif text-lg font-semibold text-stone-200 mb-3">
 					5. Segun el numero de procesadores
 				</h3>
-				<ul className="space-y-1 text-zinc-300">
+				<ul className="space-y-2 text-stone-300">
 					<li className="flex gap-2">
-						<span className="shrink-0 mt-0.5 text-zinc-400 font-bold">→</span>
+						<span className="shrink-0 mt-0.5 text-stone-400 font-bold">→</span>
 						<span>
-							<span className="font-medium text-zinc-200">Serial (secuencial):</span> un solo
+							<span className="font-medium text-stone-200">Serial (secuencial):</span> un solo
 							procesador. Forma mas tradicional.
 						</span>
 					</li>
 					<li className="flex gap-2">
-						<span className="shrink-0 mt-0.5 text-zinc-400 font-bold">→</span>
+						<span className="shrink-0 mt-0.5 text-stone-400 font-bold">→</span>
 						<div>
-							<span className="font-medium text-zinc-200">Paralela:</span> multiples procesadores
+							<span className="font-medium text-stone-200">Paralela:</span> multiples procesadores
 							para procesar en paralelo distintas partes de una consulta.
-							<ul className="list-disc list-inside ml-4 mt-1 space-y-0.5 text-zinc-400 text-sm">
+							<ul className="list-disc list-inside ml-4 mt-1 space-y-0.5 text-stone-400 text-sm">
 								<li>MC — Memoria Compartida</li>
 								<li>NC — Nada Compartido</li>
 								<li>DC — Disco Compartido</li>
 								<li>AC — Arquitectura Hibrida (Algo Compartido)</li>
 							</ul>
-							<p className="text-sm text-zinc-500 mt-1">
+							<p className="text-sm text-stone-500 mt-1">
 								Ejemplo: Apache Spark permite programar clusters con paralelismo de datos implicito.
 							</p>
 						</div>
@@ -719,29 +719,29 @@ export function Topic13() {
 
 			{/* Criterio 6 */}
 			<section>
-				<h3 className="text-base font-semibold text-zinc-200 mb-3">
+				<h3 className="font-serif text-lg font-semibold text-stone-200 mb-3">
 					6. Segun el numero de sitios
 				</h3>
-				<ul className="space-y-2 text-zinc-300">
+				<ul className="space-y-2 text-stone-300">
 					<li className="flex gap-2">
 						<span className="shrink-0 mt-0.5 text-blue-400 font-bold">→</span>
 						<span>
-							<span className="font-medium text-zinc-200">Centralizada:</span> todos los datos en un
+							<span className="font-medium text-stone-200">Centralizada:</span> todos los datos en un
 							solo sitio (servidor central).
 						</span>
 					</li>
 					<li className="flex gap-2">
 						<span className="shrink-0 mt-0.5 text-green-400 font-bold">→</span>
 						<div>
-							<span className="font-medium text-zinc-200">Distribuida:</span> datos distribuidos en
+							<span className="font-medium text-stone-200">Distribuida:</span> datos distribuidos en
 							multiples sitios conectados por red.
-							<ul className="list-disc list-inside ml-4 mt-1 text-zinc-400 text-sm">
+							<ul className="list-disc list-inside ml-4 mt-1 text-stone-400 text-sm">
 								<li>
-									<span className="text-zinc-300">Homogenea:</span> todos los nodos usan el mismo
+									<span className="text-stone-300">Homogenea:</span> todos los nodos usan el mismo
 									DBMS.
 								</li>
 								<li>
-									<span className="text-zinc-300">Heterogenea:</span> los nodos usan distintos
+									<span className="text-stone-300">Heterogenea:</span> los nodos usan distintos
 									DBMS.
 								</li>
 							</ul>
@@ -751,14 +751,14 @@ export function Topic13() {
 			</section>
 
 			{/* BD Relacional en profundidad */}
-			<section className="border-t border-zinc-800 pt-6">
-				<h3 className="text-base font-semibold text-zinc-200 mb-3">
+			<section className="border-t border-stone-800 pt-6">
+				<h3 className="font-serif text-lg font-semibold text-stone-200 mb-3">
 					BD Relacional: conceptos fundamentales
 				</h3>
-				<p className="text-zinc-300 leading-relaxed mb-4">
+				<p className="text-stone-300 leading-relaxed mb-4">
 					Las BD relacionales nacen en la decada de los 70, cuando Edgar Codd (IBM) propuso un modelo
 					basado en la teoria matematica de relaciones. Una BD Relacional es un{' '}
-					<span className="font-medium text-zinc-100">
+					<span className="font-medium text-stone-100">
 						conjunto de tablas (relations) asociadas (relationships) entre si.
 					</span>
 				</p>
@@ -772,9 +772,9 @@ export function Topic13() {
 						['PRIMARY KEY (PK)', 'Campo(s) que identifican univocamente cada fila. No puede ser NULL.'],
 						['FOREIGN KEY (FK)', 'Campo que referencia la PK de otra tabla para establecer la asociacion. Puede ser NULL.'],
 					].map(([termino, def]) => (
-						<div key={termino} className="p-3 bg-zinc-900 border border-zinc-800 rounded-md">
+						<div key={termino} className="p-3 bg-stone-900 border border-stone-800 rounded-md">
 							<p className="text-xs font-semibold text-blue-300 mb-1">{termino}</p>
-							<p className="text-xs text-zinc-400">{def}</p>
+							<p className="text-xs text-stone-400">{def}</p>
 						</div>
 					))}
 				</div>
@@ -792,30 +792,30 @@ export function Topic13() {
 					No es cero ni blanco. Una PRIMARY KEY no puede ser NULL. Una FOREIGN KEY si puede ser NULL.
 				</Callout>
 
-				<h4 className="text-sm font-semibold text-zinc-300 mt-4 mb-2">
+				<h4 className="text-sm font-semibold text-stone-300 mt-4 mb-2">
 					Datos antes del esquema
 				</h4>
-				<p className="text-zinc-400 text-xs mb-3">
+				<p className="text-stone-400 text-xs mb-3">
 					Antes de escribir el{' '}
-					<code className="bg-zinc-800 px-1 rounded">CREATE TABLE</code>, conviene ver como lucen los
-					datos reales. Aqui, <code className="bg-zinc-800 px-1 rounded">RUT_ALUMNO</code> en
+					<code className="bg-stone-800 px-1 rounded">CREATE TABLE</code>, conviene ver como lucen los
+					datos reales. Aqui, <code className="bg-stone-800 px-1 rounded">RUT_ALUMNO</code> en
 					SOLICITUD apunta a la PK de ALUMNO — eso es una Foreign Key en accion.
 				</p>
 
 				<div className="grid sm:grid-cols-2 gap-3 mb-4 text-xs">
 					<div>
-						<p className="text-zinc-500 font-mono mb-1">ALUMNO</p>
-						<div className="overflow-x-auto rounded border border-zinc-700">
+						<p className="text-stone-500 font-mono mb-1">ALUMNO</p>
+						<div className="overflow-x-auto rounded border border-stone-700">
 							<table className="w-full border-collapse">
 								<thead>
-									<tr className="bg-zinc-800">
-										<th className="px-3 py-1.5 text-left text-blue-300 font-semibold border-b border-zinc-700">
+									<tr className="bg-stone-800">
+										<th className="px-3 py-1.5 text-left text-blue-300 font-semibold border-b border-stone-700">
 											RUT (PK)
 										</th>
-										<th className="px-3 py-1.5 text-left text-zinc-300 font-medium border-b border-zinc-700">
+										<th className="px-3 py-1.5 text-left text-stone-300 font-medium border-b border-stone-700">
 											NOMBRE
 										</th>
-										<th className="px-3 py-1.5 text-left text-zinc-300 font-medium border-b border-zinc-700">
+										<th className="px-3 py-1.5 text-left text-stone-300 font-medium border-b border-stone-700">
 											CARRERA
 										</th>
 									</tr>
@@ -826,14 +826,14 @@ export function Topic13() {
 										['98765432-1', 'Luis Vega', 'Ing. Civil Ind.'],
 										['11223344-5', 'Maria Paz', 'Ing. Civil Inf.'],
 									].map(([rut, nombre, carrera], i) => (
-										<tr key={rut} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-											<td className="px-3 py-1.5 text-blue-300 border-b border-zinc-800 font-mono">
+										<tr key={rut} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+											<td className="px-3 py-1.5 text-blue-300 border-b border-stone-800 font-mono">
 												{rut}
 											</td>
-											<td className="px-3 py-1.5 text-zinc-300 border-b border-zinc-800">
+											<td className="px-3 py-1.5 text-stone-300 border-b border-stone-800">
 												{nombre}
 											</td>
-											<td className="px-3 py-1.5 text-zinc-400 border-b border-zinc-800">
+											<td className="px-3 py-1.5 text-stone-400 border-b border-stone-800">
 												{carrera}
 											</td>
 										</tr>
@@ -844,18 +844,18 @@ export function Topic13() {
 					</div>
 
 					<div>
-						<p className="text-zinc-500 font-mono mb-1">SOLICITUD</p>
-						<div className="overflow-x-auto rounded border border-zinc-700">
+						<p className="text-stone-500 font-mono mb-1">SOLICITUD</p>
+						<div className="overflow-x-auto rounded border border-stone-700">
 							<table className="w-full border-collapse">
 								<thead>
-									<tr className="bg-zinc-800">
-										<th className="px-3 py-1.5 text-left text-blue-300 font-semibold border-b border-zinc-700">
+									<tr className="bg-stone-800">
+										<th className="px-3 py-1.5 text-left text-blue-300 font-semibold border-b border-stone-700">
 											CODSOL (PK)
 										</th>
-										<th className="px-3 py-1.5 text-left text-zinc-300 font-medium border-b border-zinc-700">
+										<th className="px-3 py-1.5 text-left text-stone-300 font-medium border-b border-stone-700">
 											MOTIVO
 										</th>
-										<th className="px-3 py-1.5 text-left text-amber-300 font-semibold border-b border-zinc-700">
+										<th className="px-3 py-1.5 text-left text-orange-300 font-semibold border-b border-stone-700">
 											RUT_ALUMNO (FK)
 										</th>
 									</tr>
@@ -866,14 +866,14 @@ export function Topic13() {
 										['1002', 'Toma de ramo', '98765432-1'],
 										['1003', 'Retiro asignatura', '12345678-9'],
 									].map(([cod, motivo, rut], i) => (
-										<tr key={cod} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-											<td className="px-3 py-1.5 text-blue-300 border-b border-zinc-800 font-mono">
+										<tr key={cod} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+											<td className="px-3 py-1.5 text-blue-300 border-b border-stone-800 font-mono">
 												{cod}
 											</td>
-											<td className="px-3 py-1.5 text-zinc-300 border-b border-zinc-800">
+											<td className="px-3 py-1.5 text-stone-300 border-b border-stone-800">
 												{motivo}
 											</td>
-											<td className="px-3 py-1.5 text-amber-300 border-b border-zinc-800 font-mono">
+											<td className="px-3 py-1.5 text-orange-300 border-b border-stone-800 font-mono">
 												{rut}
 											</td>
 										</tr>
@@ -883,17 +883,17 @@ export function Topic13() {
 						</div>
 					</div>
 				</div>
-				<p className="text-zinc-500 text-xs mb-4">
+				<p className="text-stone-500 text-xs mb-4">
 					Ana Soto (
-					<code className="bg-zinc-800 px-1 rounded text-blue-300">12345678-9</code>) tiene dos
+					<code className="bg-stone-800 px-1 rounded text-blue-300">12345678-9</code>) tiene dos
 					solicitudes: CODSOL 1001 y 1003. El valor{' '}
-					<code className="bg-zinc-800 px-1 rounded text-amber-300">12345678-9</code> en
+					<code className="bg-stone-800 px-1 rounded text-orange-300">12345678-9</code> en
 					RUT_ALUMNO es la FK que conecta SOLICITUD con ALUMNO — eliminar a Ana Soto sin borrar sus
 					solicitudes primero violaría la integridad referencial.
 				</p>
 
-				<h4 className="text-sm font-semibold text-zinc-300 mb-2">Esquema SQL</h4>
-				<pre className="bg-zinc-900 border border-zinc-800 rounded-md p-4 text-xs text-green-300 overflow-x-auto font-mono">
+				<h4 className="text-sm font-semibold text-stone-300 mb-2">Esquema SQL</h4>
+				<pre className="bg-stone-900 border border-stone-800 rounded-md p-4 text-xs text-green-300 overflow-x-auto font-mono">
 					{`CREATE TABLE ALUMNO
 (
   RUT             char(9) primary key,
@@ -919,12 +919,12 @@ CREATE TABLE SOLICITUD
 export function Topic14() {
 	return (
 		<div className="space-y-6">
-			<h2 className="text-xl font-semibold text-zinc-100">1.4 Proceso de Diseno de BD</h2>
+			<h2 className="font-serif text-2xl font-semibold text-stone-100 tracking-tight">1.4 Proceso de Diseno de BD</h2>
 
-			<h3 className="text-base font-semibold text-zinc-200">
+			<h3 className="font-serif text-lg font-semibold text-stone-200">
 				BD en el desarrollo de Sistemas de Informacion (SI)
 			</h3>
-			<p className="text-zinc-300 leading-relaxed">
+			<p className="text-stone-300 leading-relaxed">
 				Un Sistema de Informacion (SI) es un conjunto de aplicaciones (software), datos, recursos
 				materiales (equipos) y personas (usuarios) que interactuan para procesar datos y convertirlos
 				en informacion relevante para una organizacion. Para desarrollar un SI se siguen estas etapas:
@@ -933,22 +933,22 @@ export function Topic14() {
 				{['Analisis', 'Diseno', 'Construccion', 'Implementacion', 'Mantenimiento'].map(
 					(etapa, i, arr) => (
 						<div key={etapa} className="flex items-center gap-1">
-							<span className="px-3 py-1.5 bg-zinc-800 border border-zinc-700 rounded text-sm text-zinc-300">
+							<span className="px-3 py-1.5 bg-stone-800 border border-stone-700 rounded text-sm text-stone-300">
 								{etapa}
 							</span>
-							{i < arr.length - 1 && <span className="text-zinc-600">→</span>}
+							{i < arr.length - 1 && <span className="text-stone-600">→</span>}
 						</div>
 					),
 				)}
 			</div>
-			<p className="text-zinc-400 text-sm">
+			<p className="text-stone-400 text-sm">
 				Las etapas donde la BD tiene mayor impacto son{' '}
-				<span className="text-zinc-300">Analisis</span> (donde se logra el modelo de datos
-				conceptual) y <span className="text-zinc-300">Diseno</span> (donde se convierte ese modelo en
+				<span className="text-stone-300">Analisis</span> (donde se logra el modelo de datos
+				conceptual) y <span className="text-stone-300">Diseno</span> (donde se convierte ese modelo en
 				uno implementable en el DBMS).
 			</p>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-4">
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-4">
 				Las 3 etapas del trabajo con BD
 			</h3>
 
@@ -956,9 +956,9 @@ export function Topic14() {
 				<div className="border border-red-800 bg-red-950/20 rounded-md p-4">
 					<p className="text-sm font-semibold text-red-300 mb-2">
 						1. Modelamiento de Datos{' '}
-						<span className="text-xs font-normal text-zinc-500">(rara vez)</span>
+						<span className="text-xs font-normal text-stone-500">(rara vez)</span>
 					</p>
-					<p className="text-sm text-zinc-300">
+					<p className="text-sm text-stone-300">
 						Captura los requerimientos de informacion de los usuarios y los traduce en un{' '}
 						<span className="font-medium">modelo de datos conceptual</span> — un diagrama dibujado
 						con alguna notacion estandar donde quedan reflejadas las entidades y asociaciones mas
@@ -969,9 +969,9 @@ export function Topic14() {
 				<div className="border border-blue-800 bg-blue-950/20 rounded-md p-4">
 					<p className="text-sm font-semibold text-blue-300 mb-2">
 						2. Diseno / Creacion de la BD{' '}
-						<span className="text-xs font-normal text-zinc-500">(rara vez)</span>
+						<span className="text-xs font-normal text-stone-500">(rara vez)</span>
 					</p>
-					<p className="text-sm text-zinc-300">
+					<p className="text-sm text-stone-300">
 						Transforma el modelo conceptual en un{' '}
 						<span className="font-medium">modelo de datos logico</span>, luego se escribe en el
 						lenguaje que entiende el DBMS: comandos{' '}
@@ -984,9 +984,9 @@ export function Topic14() {
 				<div className="border border-green-800 bg-green-950/20 rounded-md p-4">
 					<p className="text-sm font-semibold text-green-300 mb-2">
 						3. Uso / Operacion de la BD{' '}
-						<span className="text-xs font-normal text-zinc-500">(frecuentemente)</span>
+						<span className="text-xs font-normal text-stone-500">(frecuentemente)</span>
 					</p>
-					<p className="text-sm text-zinc-300">
+					<p className="text-sm text-stone-300">
 						Usuarios finales acceden constantemente via queries (
 						<span className="font-mono text-green-300">SELECT</span>) y desarrolladores mantienen la
 						BD via <span className="font-mono text-green-300">DML</span> (INSERT, UPDATE, DELETE). El
@@ -998,34 +998,34 @@ export function Topic14() {
 			<Callout type="example" title="Modelamiento conceptual: sistema de inscripcion UTFSM">
 				Imagina que la UTFSM te pide modelar el sistema de inscripcion de asignaturas. En la etapa
 				de Analisis identificas las <strong>entidades</strong>:{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">ALUMNO</code>,{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">ASIGNATURA</code>,{' '}
-				<code className="text-xs bg-zinc-800 px-1 rounded">PROFESOR</code>. Luego capturas las{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">ALUMNO</code>,{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">ASIGNATURA</code>,{' '}
+				<code className="text-xs bg-stone-800 px-1 rounded">PROFESOR</code>. Luego capturas las{' '}
 				<strong>relaciones</strong>: un alumno <em>se inscribe en</em> muchas asignaturas, un
 				profesor <em>dicta</em> varias asignaturas. Eso es un modelo conceptual — describes la
 				realidad antes de pensar en tablas o SQL.
 			</Callout>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">
 				Niveles organizacionales y tipos de SI
 			</h3>
-			<p className="text-zinc-300 text-sm leading-relaxed mb-3">
+			<p className="text-stone-300 text-sm leading-relaxed mb-3">
 				Los SI y las BD deben satisfacer los requerimientos de informacion de todos los niveles de la
 				organizacion. Los requerimientos en cada nivel son bastante diferentes:
 			</p>
 
-			<div className="overflow-x-auto rounded-md border border-zinc-700">
+			<div className="overflow-x-auto rounded-md border border-stone-700">
 				<table className="w-full text-xs border-collapse">
 					<thead>
-						<tr className="bg-zinc-800">
-							<th className="text-left px-3 py-2 text-zinc-400 font-medium border-b border-zinc-700"></th>
-							<th className="text-center px-3 py-2 text-blue-300 font-semibold border-b border-zinc-700">
+						<tr className="bg-stone-800">
+							<th className="text-left px-3 py-2 text-stone-400 font-medium border-b border-stone-700"></th>
+							<th className="text-center px-3 py-2 text-blue-300 font-semibold border-b border-stone-700">
 								Nivel Estrategico
 							</th>
-							<th className="text-center px-3 py-2 text-purple-300 font-semibold border-b border-zinc-700">
+							<th className="text-center px-3 py-2 text-purple-300 font-semibold border-b border-stone-700">
 								Nivel Tactico
 							</th>
-							<th className="text-center px-3 py-2 text-green-300 font-semibold border-b border-zinc-700">
+							<th className="text-center px-3 py-2 text-green-300 font-semibold border-b border-stone-700">
 								Nivel Operacional
 							</th>
 						</tr>
@@ -1042,17 +1042,17 @@ export function Topic14() {
 							['Rango de Tiempo', 'Anos', 'Anos', 'Meses'],
 							['Uso', 'Prediccion', 'Control', 'Accion diaria'],
 						].map(([fila, est, tac, ope], i) => (
-							<tr key={fila} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-								<td className="px-3 py-2 text-zinc-400 font-medium border-b border-zinc-800">
+							<tr key={fila} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+								<td className="px-3 py-2 text-stone-400 font-medium border-b border-stone-800">
 									{fila}
 								</td>
-								<td className="px-3 py-2 text-zinc-300 border-b border-zinc-800 text-center">
+								<td className="px-3 py-2 text-stone-300 border-b border-stone-800 text-center">
 									{est}
 								</td>
-								<td className="px-3 py-2 text-zinc-300 border-b border-zinc-800 text-center">
+								<td className="px-3 py-2 text-stone-300 border-b border-stone-800 text-center">
 									{tac}
 								</td>
-								<td className="px-3 py-2 text-zinc-300 border-b border-zinc-800 text-center">
+								<td className="px-3 py-2 text-stone-300 border-b border-stone-800 text-center">
 									{ope}
 								</td>
 							</tr>
@@ -1061,27 +1061,27 @@ export function Topic14() {
 				</table>
 			</div>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-6">Tipos de SI: OLTP vs OLAP</h3>
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-6">Tipos de SI: OLTP vs OLAP</h3>
 
 			<div className="grid gap-3 sm:grid-cols-2">
 				<div className="border border-blue-700 bg-blue-950/20 rounded-md p-4">
 					<p className="text-sm font-bold text-blue-300 mb-2">OLTP — Online Transaction Processing</p>
-					<p className="text-sm text-zinc-300 mb-2">
+					<p className="text-sm text-stone-300 mb-2">
 						SI que automatizan los procesos de nivel operacional (transacciones del negocio). Por
 						ejemplo, en un banco: apertura de cuentas, depositos, giros, pagos.
 					</p>
-					<ul className="text-xs text-zinc-400 space-y-1 list-disc list-inside">
+					<ul className="text-xs text-stone-400 space-y-2 list-disc list-inside">
 						<li>SI Operacionales (TPS — Transaction Processing Systems)</li>
 						<li>SI Administrativos (MIS — Management Information Systems)</li>
 					</ul>
 				</div>
-				<div className="border border-amber-700 bg-amber-950/20 rounded-md p-4">
-					<p className="text-sm font-bold text-amber-300 mb-2">OLAP — Online Analytic Processing</p>
-					<p className="text-sm text-zinc-300 mb-2">
+				<div className="border border-orange-700 bg-orange-950/20 rounded-md p-4">
+					<p className="text-sm font-bold text-orange-300 mb-2">OLAP — Online Analytic Processing</p>
+					<p className="text-sm text-stone-300 mb-2">
 						SI que apoyan el nivel estrategico. Decisiones a largo plazo con alto grado de
 						incertidumbre: poner un nuevo producto en el mercado, abrir una nueva sucursal.
 					</p>
-					<ul className="text-xs text-zinc-400 space-y-1 list-disc list-inside">
+					<ul className="text-xs text-stone-400 space-y-2 list-disc list-inside">
 						<li>DSS (Decision Support Systems)</li>
 						<li>Se apoyan en BD multidimensionales (Data Warehouse)</li>
 					</ul>
@@ -1097,7 +1097,7 @@ export function Topic14() {
 				para la toma de decisiones.
 			</Callout>
 
-			<h3 className="text-base font-semibold text-zinc-200 mt-4">
+			<h3 className="font-serif text-lg font-semibold text-stone-200 mt-4">
 				Data Warehouse y Business Intelligence
 			</h3>
 
@@ -1105,7 +1105,7 @@ export function Topic14() {
 				&ldquo;Almacen&rdquo; donde las organizaciones pueden depositar todos aquellos datos con
 				importancia critica para la toma de decisiones. Integra datos de los distintos sistemas OLTP
 				de la organizacion. Se compone de 3 elementos:
-				<ul className="list-disc list-inside mt-2 space-y-1">
+				<ul className="list-disc list-inside mt-2 space-y-2">
 					<li>
 						<span className="font-medium">ETL (Extract, Transform, Load):</span> herramientas de
 						software que extraen, transforman y cargan datos desde fuentes operacionales y externas.
@@ -1115,10 +1115,10 @@ export function Topic14() {
 				</ul>
 			</Callout>
 
-			<p className="text-zinc-300 text-sm leading-relaxed">
+			<p className="text-stone-300 text-sm leading-relaxed">
 				Los sistemas OLTP van registrando transacciones en el tiempo. Esos datos, cuando pierden
 				vigencia operacional, pasan a conformar{' '}
-				<span className="font-medium text-zinc-100">archivos historicos</span>. Con el tiempo se
+				<span className="font-medium text-stone-100">archivos historicos</span>. Con el tiempo se
 				generan grandes volumenes de datos — una &ldquo;mina de oro&rdquo; para inferir el futuro via
 				analisis estadistico.
 			</p>

@@ -9,10 +9,10 @@ import QuizSection from '@/components/u1/QuizSection'
 import CheatSheetSection from '@/components/u1/CheatSheetSection'
 
 const SECTION_DESCRIPTIONS: Record<SectionId, string> = {
-	conceptos: 'Contenido teorico de la unidad con definiciones, tablas comparativas y ejemplos',
-	ejercicios: 'Ejercicios practicos resueltos paso a paso',
+	conceptos: 'Contenido teórico de la unidad con definiciones, tablas comparativas y ejemplos',
+	ejercicios: 'Ejercicios prácticos resueltos paso a paso',
 	'editor-sql': 'Editor SQL interactivo para ejecutar consultas contra una base de datos real',
-	quiz: 'Preguntas de seleccion multiple para evaluar tu comprension',
+	quiz: 'Preguntas de selección múltiple para evaluar tu comprensión',
 	'cheat-sheet': 'Resumen visual con los conceptos clave de la unidad',
 }
 
@@ -22,7 +22,7 @@ export default function SectionPage() {
 	const unit = UNITS.find((u) => u.id === unitId)
 	if (!unit) {
 		return (
-			<div className="text-zinc-400 p-6">
+			<div className="text-stone-400 p-6">
 				<p>Unidad no encontrada</p>
 			</div>
 		)
@@ -31,17 +31,17 @@ export default function SectionPage() {
 	const sectionData = unit.sections.find((s) => s.id === section)
 	if (!sectionData) {
 		return (
-			<div className="text-zinc-400 p-6">
-				<p>Seccion no encontrada</p>
+			<div className="text-stone-400 p-6">
+				<p>Sección no encontrada</p>
 			</div>
 		)
 	}
 
 	const breadcrumb = (
-		<p className="text-zinc-500 text-sm mb-6">
+		<p className="text-stone-500 text-sm mb-6">
 			Unidad {unit.number}: {unit.title}{' '}
-			<span className="text-zinc-700">&rsaquo;</span>{' '}
-			<span className="text-zinc-400">{sectionData.label}</span>
+			<span className="text-stone-700">&rsaquo;</span>{' '}
+			<span className="text-stone-400">{sectionData.label}</span>
 		</p>
 	)
 
@@ -95,7 +95,7 @@ export default function SectionPage() {
 			{breadcrumb}
 			<PlaceholderSection
 				title={sectionData.label}
-				description={SECTION_DESCRIPTIONS[sectionData.id as SectionId] ?? 'Contenido proximamente'}
+				description={SECTION_DESCRIPTIONS[sectionData.id as SectionId] ?? 'Contenido próximamente'}
 				icon={sectionData.icon}
 			/>
 		</div>

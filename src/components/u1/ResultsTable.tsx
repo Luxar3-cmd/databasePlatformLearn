@@ -23,19 +23,19 @@ export function ResultsTable({ result }: ResultsTableProps) {
 				? `Consulta ejecutada. ${result.rowCount} ${result.rowCount === 1 ? 'fila afectada' : 'filas afectadas'}.`
 				: 'Sin resultados.'
 		return (
-			<p className="text-zinc-400 text-sm italic">{msg}</p>
+			<p className="text-stone-400 text-sm italic">{msg}</p>
 		)
 	}
 
 	const headers = Object.keys(result.rows[0])
 
 	return (
-		<div className="overflow-x-auto rounded-md border border-zinc-700">
-			<table className="w-full text-sm font-mono text-left text-zinc-300">
+		<div className="overflow-x-auto rounded-md border border-stone-700">
+			<table className="w-full text-sm font-mono text-left text-stone-300">
 				<thead>
-					<tr className="bg-zinc-800 border-b border-zinc-700">
+					<tr className="bg-stone-800 border-b border-stone-700">
 						{headers.map(h => (
-							<th key={h} className="px-3 py-2 font-semibold text-zinc-200 whitespace-nowrap">
+							<th key={h} className="px-3 py-2 font-semibold text-stone-200 whitespace-nowrap">
 								{h}
 							</th>
 						))}
@@ -45,10 +45,10 @@ export function ResultsTable({ result }: ResultsTableProps) {
 					{result.rows.map((row, i) => (
 						<tr
 							key={i}
-							className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-800/60'}
+							className={`${i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-800/60'} hover:bg-stone-800/80 transition-colors`}
 						>
 							{headers.map(h => (
-								<td key={h} className="px-3 py-1.5 border-t border-zinc-800 whitespace-nowrap text-zinc-400">
+								<td key={h} className="px-3 py-1.5 border-t border-stone-800 whitespace-nowrap text-stone-300">
 									{String(row[h] ?? '')}
 								</td>
 							))}
@@ -56,7 +56,7 @@ export function ResultsTable({ result }: ResultsTableProps) {
 					))}
 				</tbody>
 			</table>
-			<p className="px-3 py-1.5 text-xs text-zinc-600 border-t border-zinc-700 bg-zinc-900">
+			<p className="px-3 py-1.5 text-xs text-stone-500 border-t border-stone-700 bg-stone-900">
 				{result.rowCount} {result.rowCount === 1 ? 'fila' : 'filas'}
 			</p>
 		</div>

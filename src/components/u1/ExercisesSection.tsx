@@ -27,21 +27,21 @@ export default function ExercisesSection() {
 	return (
 		<div className="flex flex-col gap-6">
 			<div>
-				<h1 className="text-2xl font-bold text-zinc-100">Ejercicios</h1>
-				<p className="text-zinc-400 text-sm mt-1">Practica y refuerza los conceptos de U1</p>
+				<h1 className="font-serif text-2xl font-semibold text-stone-100 tracking-tight">Ejercicios</h1>
+				<p className="text-stone-400 text-sm mt-1">Practica y refuerza los conceptos de la Unidad 1</p>
 			</div>
 
-			<div role="tablist" className="flex gap-1 border-b border-zinc-700">
+			<div role="tablist" className="flex gap-1 border-b border-stone-700">
 				{TABS.map((tab) => (
 					<button
 						key={tab.id}
 						role="tab"
 						aria-selected={activeTab === tab.id}
 						onClick={() => setActiveTab(tab.id)}
-						className={`flex items-center gap-1.5 px-4 py-2 text-sm font-medium transition-colors ${
+						className={`flex items-center gap-1.5 px-4 py-2 text-sm font-medium transition-colors border-b-2 ${
 							activeTab === tab.id
-								? 'border-b-2 border-blue-500 text-blue-400'
-								: 'text-zinc-400 hover:text-zinc-200'
+								? 'border-amber-500 text-amber-400'
+								: 'border-transparent text-stone-400 hover:text-stone-200'
 						}`}
 					>
 						{tab.icon}
@@ -50,13 +50,13 @@ export default function ExercisesSection() {
 				))}
 			</div>
 
-			<div role="tabpanel">
+			<div key={activeTab} role="tabpanel" className="animate-fade-in">
 				{activeTab === 'sql' && (
 					<div className="flex flex-col gap-6">
-						<p className="text-zinc-400 text-sm">
-							<span className="text-zinc-200 font-medium">{completedIds.size}</span>
+						<p className="text-stone-400 text-sm">
+							<span className="text-stone-200 font-medium">{completedIds.size}</span>
 							{' '}de{' '}
-							<span className="text-zinc-200 font-medium">{U1_EXERCISES.length}</span>
+							<span className="text-stone-200 font-medium">{U1_EXERCISES.length}</span>
 							{' '}completados
 						</p>
 						<div className="flex flex-col gap-6">

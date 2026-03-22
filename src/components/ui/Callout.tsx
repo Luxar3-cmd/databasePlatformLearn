@@ -19,9 +19,9 @@ const STYLES = {
 		title: 'text-green-300',
 	},
 	warning: {
-		container: 'border-amber-500 bg-amber-950/30',
-		icon: 'text-amber-400',
-		title: 'text-amber-300',
+		container: 'border-orange-500 bg-orange-950/30',
+		icon: 'text-orange-400',
+		title: 'text-orange-300',
 	},
 }
 
@@ -36,12 +36,12 @@ export function Callout({ type, title, children }: CalloutProps) {
 	const Icon = ICONS[type]
 
 	return (
-		<div className={`border-l-4 rounded-r-md px-4 py-3 my-4 ${s.container}`}>
+		<div className={`border-l-4 rounded-r-md px-4 py-3 ${s.container}`}>
 			<div className="flex items-center gap-2 mb-2">
 				<Icon size={16} className={s.icon} />
-				<p className={`font-semibold text-sm uppercase tracking-wide ${s.title}`}>{title}</p>
+				<p className={`font-serif font-semibold text-sm uppercase tracking-wide ${s.title}`}>{title}</p>
 			</div>
-			<div className="text-zinc-300 text-sm leading-relaxed">{children}</div>
+			<div className="text-stone-300 text-sm leading-relaxed">{children}</div>
 		</div>
 	)
 }

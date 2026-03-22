@@ -147,10 +147,10 @@ export function executeQuery(sql: string): QueryResult {
 function translateError(err: unknown): string {
 	const msg = err instanceof Error ? err.message : String(err)
 	if (msg.includes('not found') || msg.includes('Table') && msg.includes('undefined')) {
-		return 'Tabla no encontrada. Verifica el nombre.'
+		return 'Tabla no encontrada. Tablas disponibles: alumnos, profesores, asignaturas, departamentos, inscripciones.'
 	}
 	if (msg.includes('Unexpected token') || msg.includes('parse error')) {
-		return 'Error de sintaxis SQL. Revisa la consulta.'
+		return 'Error de sintaxis SQL. Revisa paréntesis, comillas y palabras clave de la consulta.'
 	}
 	if (msg.toLowerCase().includes('column')) {
 		return `Columna no encontrada: ${msg}`

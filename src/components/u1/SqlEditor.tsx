@@ -21,7 +21,7 @@ export function SqlEditor({ value, onChange, onExecute }: SqlEditorProps) {
 	])
 
 	return (
-		<div className="rounded-md overflow-hidden border border-zinc-700">
+		<div className="rounded-md overflow-hidden border border-stone-700">
 			<CodeMirror
 				value={value}
 				height="200px"

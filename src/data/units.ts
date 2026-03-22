@@ -26,19 +26,19 @@ export const UNITS: Unit[] = [
 	{
 		id: 'u1',
 		number: 1,
-		title: 'Introduccion a Bases de Datos',
+		title: 'Introducción a Bases de Datos',
 		locked: false,
 		sections: SECTIONS,
 	},
-	{ id: 'u2', number: 2, title: 'Modelo Entidad-Relacion', locked: true, sections: SECTIONS },
+	{ id: 'u2', number: 2, title: 'Modelo Entidad-Relación', locked: true, sections: SECTIONS },
 	{ id: 'u3', number: 3, title: 'Modelo Relacional', locked: true, sections: SECTIONS },
 	{ id: 'u4', number: 4, title: 'SQL', locked: true, sections: SECTIONS },
-	{ id: 'u5', number: 5, title: 'Normalizacion', locked: true, sections: SECTIONS },
+	{ id: 'u5', number: 5, title: 'Normalización', locked: true, sections: SECTIONS },
 	{ id: 'u6', number: 6, title: 'Temas Avanzados', locked: true, sections: SECTIONS },
 ]
 
 export const SIDEBAR_EXTRA = [
 	{ id: 'tareas', label: 'Tareas', icon: 'ClipboardList', locked: true },
-	{ id: 'certamenes', label: 'Certamenes', icon: 'FileCheck', locked: true },
-	{ id: 'ayudantias', label: 'Ayudantias', icon: 'Users', locked: true },
+	{ id: 'certamenes', label: 'Certámenes', icon: 'FileCheck', locked: true },
+	{ id: 'ayudantias', label: 'Ayudantías', icon: 'Users', locked: true },
 ]

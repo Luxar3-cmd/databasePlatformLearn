@@ -31,9 +31,9 @@ export function CSDefiniciones() {
 					def: 'Data Control Language. Sublanguaje del SQL para control de acceso y permisos: GRANT, REVOKE. Lo administra el DBA.',
 				},
 			].map(({ term, def }) => (
-				<div key={term} className="border-b border-zinc-800 pb-3 last:border-0 last:pb-0">
-					<dt className="text-sm font-bold text-zinc-100 mb-1">{term}</dt>
-					<dd className="text-sm text-zinc-300 leading-relaxed">{def}</dd>
+				<div key={term} className="border-b border-stone-800 pb-3 last:border-0 last:pb-0">
+					<dt className="text-sm font-bold text-stone-100 mb-1">{term}</dt>
+					<dd className="text-sm text-stone-300 leading-relaxed">{def}</dd>
 				</div>
 			))}
 		</dl>
@@ -42,17 +42,17 @@ export function CSDefiniciones() {
 
 export function CSArchivosVsBd() {
 	return (
-		<div className="overflow-x-auto rounded-md border border-zinc-700">
+		<div className="overflow-x-auto rounded-md border border-stone-700">
 			<table className="w-full text-sm border-collapse">
 				<thead>
-					<tr className="bg-zinc-800">
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+					<tr className="bg-stone-800">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Criterio
 						</th>
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Archivos
 						</th>
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Base de Datos
 						</th>
 					</tr>
@@ -67,12 +67,12 @@ export function CSArchivosVsBd() {
 						['Consistencia', 'Baja (datos duplicados)', 'Alta (dato en un lugar)'],
 						['Sinonimos/Homonimos', 'Frecuentes (sin control)', 'Eliminados via DBA'],
 					].map(([criterio, archivos, bd], i) => (
-						<tr key={criterio} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-							<td className="px-4 py-2.5 text-zinc-200 font-medium border-b border-zinc-800">
+						<tr key={criterio} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+							<td className="px-4 py-2.5 text-stone-200 font-medium border-b border-stone-800">
 								{criterio}
 							</td>
-							<td className="px-4 py-2.5 text-red-400 border-b border-zinc-800">{archivos}</td>
-							<td className="px-4 py-2.5 text-green-400 border-b border-zinc-800">{bd}</td>
+							<td className="px-4 py-2.5 text-red-400 border-b border-stone-800">{archivos}</td>
+							<td className="px-4 py-2.5 text-green-400 border-b border-stone-800">{bd}</td>
 						</tr>
 					))}
 				</tbody>
@@ -83,17 +83,17 @@ export function CSArchivosVsBd() {
 
 export function CSTiposBd() {
 	return (
-		<div className="overflow-x-auto rounded-md border border-zinc-700">
+		<div className="overflow-x-auto rounded-md border border-stone-700">
 			<table className="w-full text-sm border-collapse">
 				<thead>
-					<tr className="bg-zinc-800">
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+					<tr className="bg-stone-800">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Criterio
 						</th>
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Tipos
 						</th>
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Ejemplo breve
 						</th>
 					</tr>
@@ -131,12 +131,12 @@ export function CSTiposBd() {
 							'Servidor unico / BD en multiples nodos',
 						],
 					].map(([criterio, tipos, ejemplo], i) => (
-						<tr key={criterio} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-							<td className="px-4 py-2.5 text-zinc-200 font-medium border-b border-zinc-800 whitespace-nowrap">
+						<tr key={criterio} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+							<td className="px-4 py-2.5 text-stone-200 font-medium border-b border-stone-800 whitespace-nowrap">
 								{criterio}
 							</td>
-							<td className="px-4 py-2.5 text-zinc-300 border-b border-zinc-800">{tipos}</td>
-							<td className="px-4 py-2.5 text-zinc-500 text-xs border-b border-zinc-800">{ejemplo}</td>
+							<td className="px-4 py-2.5 text-stone-300 border-b border-stone-800">{tipos}</td>
+							<td className="px-4 py-2.5 text-stone-500 text-xs border-b border-stone-800">{ejemplo}</td>
 						</tr>
 					))}
 				</tbody>
@@ -167,8 +167,8 @@ export function CSEtapasDiseno() {
 					num: '3',
 					nombre: 'Construccion',
 					objetivo: 'Implementar la BD fisicamente en el DBMS y desarrollar los programas de aplicacion.',
-					color: 'border-amber-700 bg-amber-950/20',
-					numColor: 'text-amber-300',
+					color: 'border-orange-700 bg-orange-950/20',
+					numColor: 'text-orange-300',
 				},
 				{
 					num: '4',
@@ -181,8 +181,8 @@ export function CSEtapasDiseno() {
 					num: '5',
 					nombre: 'Mantenimiento',
 					objetivo: 'Operacion continua: DML frecuente (INSERT, UPDATE, DELETE, SELECT), ajustes de esquema via DDL, control de acceso via DCL.',
-					color: 'border-zinc-600 bg-zinc-800/40',
-					numColor: 'text-zinc-300',
+					color: 'border-stone-600 bg-stone-800/40',
+					numColor: 'text-stone-300',
 				},
 				{
 					num: '6',
@@ -195,8 +195,8 @@ export function CSEtapasDiseno() {
 				<li key={num} className={`flex gap-3 border rounded-md p-3 ${color}`}>
 					<span className={`text-lg font-bold shrink-0 w-6 text-center ${numColor}`}>{num}</span>
 					<div>
-						<p className="text-sm font-semibold text-zinc-200 mb-0.5">{nombre}</p>
-						<p className="text-xs text-zinc-400 leading-relaxed">{objetivo}</p>
+						<p className="text-sm font-semibold text-stone-200 mb-0.5">{nombre}</p>
+						<p className="text-xs text-stone-400 leading-relaxed">{objetivo}</p>
 					</div>
 				</li>
 			))}
@@ -206,20 +206,20 @@ export function CSEtapasDiseno() {
 
 export function CSNiveles() {
 	return (
-		<div className="overflow-x-auto rounded-md border border-zinc-700">
+		<div className="overflow-x-auto rounded-md border border-stone-700">
 			<table className="w-full text-sm border-collapse">
 				<thead>
-					<tr className="bg-zinc-800">
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+					<tr className="bg-stone-800">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Nivel
 						</th>
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Tipo SI
 						</th>
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Decision
 						</th>
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Datos
 						</th>
 					</tr>
@@ -245,15 +245,15 @@ export function CSNiveles() {
 							'Muy detallados, tiempo real, internos',
 						],
 					].map(([nivel, si, decision, datos], i) => (
-						<tr key={nivel} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-							<td className="px-4 py-2.5 text-zinc-200 font-medium border-b border-zinc-800 whitespace-nowrap">
+						<tr key={nivel} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+							<td className="px-4 py-2.5 text-stone-200 font-medium border-b border-stone-800 whitespace-nowrap">
 								{nivel}
 							</td>
-							<td className="px-4 py-2.5 text-blue-300 border-b border-zinc-800 text-xs font-mono">
+							<td className="px-4 py-2.5 text-blue-300 border-b border-stone-800 text-xs font-mono">
 								{si}
 							</td>
-							<td className="px-4 py-2.5 text-zinc-300 border-b border-zinc-800">{decision}</td>
-							<td className="px-4 py-2.5 text-zinc-400 border-b border-zinc-800">{datos}</td>
+							<td className="px-4 py-2.5 text-stone-300 border-b border-stone-800">{decision}</td>
+							<td className="px-4 py-2.5 text-stone-400 border-b border-stone-800">{datos}</td>
 						</tr>
 					))}
 				</tbody>
@@ -264,17 +264,17 @@ export function CSNiveles() {
 
 export function CSTerminologia() {
 	return (
-		<div className="overflow-x-auto rounded-md border border-zinc-700">
+		<div className="overflow-x-auto rounded-md border border-stone-700">
 			<table className="w-full text-sm border-collapse">
 				<thead>
-					<tr className="bg-zinc-800">
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+					<tr className="bg-stone-800">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Termino formal
 						</th>
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Equivalente informal
 						</th>
-						<th className="text-left px-4 py-3 text-zinc-300 font-semibold border-b border-zinc-700">
+						<th className="text-left px-4 py-3 text-stone-300 font-semibold border-b border-stone-700">
 							Descripcion
 						</th>
 					</tr>
@@ -312,14 +312,14 @@ export function CSTerminologia() {
 							'Campo que apunta a la PK de otra relacion para establecer asociacion. Puede ser NULL.',
 						],
 					].map(([formal, informal, desc], i) => (
-						<tr key={formal} className={i % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/50'}>
-							<td className="px-4 py-2.5 text-blue-300 font-semibold border-b border-zinc-800 whitespace-nowrap">
+						<tr key={formal} className={i % 2 === 0 ? 'bg-stone-900' : 'bg-stone-900/50'}>
+							<td className="px-4 py-2.5 text-blue-300 font-semibold border-b border-stone-800 whitespace-nowrap">
 								{formal}
 							</td>
-							<td className="px-4 py-2.5 text-zinc-200 font-medium border-b border-zinc-800">
+							<td className="px-4 py-2.5 text-stone-200 font-medium border-b border-stone-800">
 								{informal}
 							</td>
-							<td className="px-4 py-2.5 text-zinc-400 border-b border-zinc-800">{desc}</td>
+							<td className="px-4 py-2.5 text-stone-400 border-b border-stone-800">{desc}</td>
 						</tr>
 					))}
 				</tbody>

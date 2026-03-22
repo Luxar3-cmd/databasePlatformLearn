@@ -28,7 +28,7 @@ export default function SolvedExercisesSection() {
 		<div className="flex flex-col gap-10">
 			{grouped.map(({ type, label, exercises }) => (
 				<div key={type} className="flex flex-col gap-4">
-					<h2 className="text-lg font-semibold text-zinc-100 border-b border-zinc-700 pb-2">
+					<h2 className="text-lg font-semibold text-stone-100 border-b border-stone-700 pb-2">
 						{label}
 					</h2>
 					<div className="flex flex-col gap-4">

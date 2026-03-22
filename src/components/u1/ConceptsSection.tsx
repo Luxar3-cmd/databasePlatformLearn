@@ -2,10 +2,10 @@ import { useState, useRef } from 'react'
 import { Topic11, Topic12, Topic13, Topic14 } from '@/content/units/u1/concepts'
 
 const TOPICS = [
-	{ id: '1.1', label: '1.1 Definicion de BD' },
+	{ id: '1.1', label: '1.1 Definición de BD' },
 	{ id: '1.2', label: '1.2 Enfoques' },
 	{ id: '1.3', label: '1.3 Tipos de BD' },
-	{ id: '1.4', label: '1.4 Proceso de Diseno' },
+	{ id: '1.4', label: '1.4 Proceso de Diseño' },
 ] as const
 
 type TopicId = (typeof TOPICS)[number]['id']
@@ -28,17 +28,17 @@ export default function ConceptsSection() {
 
 	return (
 		<div>
-			<div role="tablist" className="flex gap-1 border-b border-zinc-700 mb-6 overflow-x-auto">
+			<div role="tablist" className="flex gap-1 border-b border-stone-700 mb-6 overflow-x-auto">
 				{TOPICS.map((t) => (
 					<button
 						key={t.id}
 						role="tab"
 						aria-selected={activeTab === t.id}
 						onClick={() => handleTabChange(t.id)}
-						className={`px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors shrink-0 ${
+						className={`px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors shrink-0 border-b-2 ${
 							activeTab === t.id
-								? 'border-b-2 border-blue-500 text-blue-400'
-								: 'text-zinc-400 hover:text-zinc-200'
+								? 'border-amber-500 text-amber-400'
+								: 'border-transparent text-stone-400 hover:text-stone-200'
 						}`}
 					>
 						{t.label}
@@ -46,7 +46,7 @@ export default function ConceptsSection() {
 				))}
 			</div>
 
-			<div ref={panelRef} role="tabpanel">
+			<div key={activeTab} ref={panelRef} role="tabpanel" className="animate-fade-in">
 				{content[activeTab]}
 			</div>
 		</div>

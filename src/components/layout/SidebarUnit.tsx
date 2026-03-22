@@ -33,8 +33,8 @@ export default function SidebarUnit({ unit, collapsed, onNavigate }: SidebarUnit
 	if (unit.locked) {
 		return (
 			<div
-				className="flex items-center gap-3 px-3 py-2 rounded-md text-zinc-600 cursor-default select-none"
-				title="Proximamente"
+				className="flex items-center gap-3 px-3 py-2 rounded-md text-stone-600 cursor-default select-none opacity-50"
+				title="Próximamente"
 			>
 				<BookOpen size={18} className="shrink-0" />
 				{!collapsed && (
@@ -52,7 +52,7 @@ export default function SidebarUnit({ unit, collapsed, onNavigate }: SidebarUnit
 	return (
 		<div>
 			<button
-				className="w-full flex items-center gap-3 px-3 py-2 rounded-md text-zinc-300 hover:text-zinc-100 hover:bg-zinc-800 transition-colors"
+				className="w-full flex items-center gap-3 px-3 py-2 rounded-md text-stone-300 hover:text-stone-100 hover:bg-stone-800 transition-colors"
 				onClick={() => setExpanded((v) => !v)}
 			>
 				<BookOpen size={18} className="shrink-0" />
@@ -78,8 +78,8 @@ export default function SidebarUnit({ unit, collapsed, onNavigate }: SidebarUnit
 								className={({ isActive }) =>
 									`flex items-center gap-3 px-3 py-1.5 rounded-md text-sm transition-colors ${
 										isActive
-											? 'bg-indigo-500/10 text-indigo-400 font-medium'
-											: 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800'
+											? 'bg-amber-500/10 text-amber-400 font-medium'
+											: 'text-stone-400 hover:text-stone-100 hover:bg-stone-800'
 									}`
 								}
 							>
