@@ -7,9 +7,17 @@ import { Callout } from '@/components/ui/Callout'
 import { useEsportsSqlEngine } from '@/hooks/useEsportsSqlEngine'
 import { useProgress } from '@/hooks/useProgress'
 import { ESPORTS_SCHEMA } from '@/engine/esports-schema'
+import { executeEsportsQuery } from '@/engine/esports-sql'
 import { SELECT_STEPS } from '@/content/ayudantias/ay2/select-steps'
 
 const BLOQUE = 'b4'
+
+function rowsMatch(a: Record<string, unknown>[], b: Record<string, unknown>[]): boolean {
+	if (a.length !== b.length) return false
+	const rowKey = (r: Record<string, unknown>) =>
+		Object.values(r).map(v => String(v ?? '')).sort().join('\0')
+	return [...a].map(rowKey).sort().join('\n') === [...b].map(rowKey).sort().join('\n')
+}
 
 function getHintLevel(attempts: number): number {
 	if (attempts >= 5) return 2
@@ -59,14 +67,26 @@ export default function B4SelectProgressive() {
 	function handleValidate() {
 		if (!result) return
 
-		if (result.ok && result.rowCount === step.expectedRowCount) {
-			markComplete(BLOQUE, step.id)
-			setFeedback({ type: 'success', message: 'Correcto! Paso completado.' })
-		} else if (result.ok) {
-			setFeedback({ type: 'error', message: `Resultado incorrecto. Se esperaban ${step.expectedRowCount} filas, obtuviste ${result.rowCount}.` })
-		} else {
+		if (!result.ok) {
 			setFeedback({ type: 'error', message: `Error en la consulta: ${result.error}` })
+			return
 		}
+
+		const expected = executeEsportsQuery(step.sql)
+		if (!expected.ok) return
+
+		if (result.rowCount !== expected.rowCount) {
+			setFeedback({ type: 'error', message: `Resultado incorrecto. Se esperaban ${expected.rowCount} filas, obtuviste ${result.rowCount}.` })
+			return
+		}
+
+		if (!rowsMatch(result.rows, expected.rows)) {
+			setFeedback({ type: 'error', message: `El número de filas es correcto pero los datos no coinciden. Revisa las columnas o condiciones de la consulta.` })
+			return
+		}
+
+		markComplete(BLOQUE, step.id)
+		setFeedback({ type: 'success', message: '¡Correcto! Paso completado.' })
 	}
 
 	const attempts = getAttempts(`b4-step-${step.id}`)
