@@ -77,6 +77,7 @@ const SEED_DATA: string[] = [
 	"INSERT INTO venta VALUES (1, 1, 15, '2024-03-01')",
 	"INSERT INTO venta VALUES (1, 2, 8, '2024-03-05')",
 	"INSERT INTO venta VALUES (1, 4, 5, '2024-03-10')",
+	"INSERT INTO venta VALUES (1, 5, 3, '2024-03-15')",
 	"INSERT INTO venta VALUES (2, 1, 10, '2024-03-02')",
 	"INSERT INTO venta VALUES (2, 3, 6, '2024-03-08')",
 	"INSERT INTO venta VALUES (3, 2, 25, '2024-03-03')",
@@ -87,6 +88,7 @@ const SEED_DATA: string[] = [
 	"INSERT INTO venta VALUES (8, 8, 7, '2024-03-07')",
 	"INSERT INTO venta VALUES (8, 4, 3, '2024-03-11')",
 	"INSERT INTO venta VALUES (8, 6, 5, '2024-03-14')",
+	"INSERT INTO venta VALUES (8, 7, 4, '2024-03-16')",
 ]
 
 export function initEsportsDb(): void {

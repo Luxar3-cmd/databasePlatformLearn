@@ -20,7 +20,7 @@ export default function InfoGeneral() {
 			<div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 				<div className="p-5 bg-stone-900/50 border border-stone-800 rounded-lg">
 					<p className="text-stone-500 text-xs uppercase tracking-wider mb-1">Profesor</p>
-					<p className="text-stone-200 font-medium">Por definir</p>
+					<p className="text-stone-200 font-medium">Mauricio Figueroa</p>
 				</div>
 				<div className="p-5 bg-stone-900/50 border border-stone-800 rounded-lg">
 					<p className="text-stone-500 text-xs uppercase tracking-wider mb-1">Semestre</p>
