@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Play, RefreshCw } from 'lucide-react'
 import { useSqlEngine } from '@/hooks/useSqlEngine'
 import { TABLE_NAMES } from '@/engine/schema'
-import { SchemaViewer } from './SchemaViewer'
+import { SchemaViewer } from '@/components/ui/SchemaViewer'
 import { SqlEditor } from './SqlEditor'
 import { ResultsTable } from './ResultsTable'
 

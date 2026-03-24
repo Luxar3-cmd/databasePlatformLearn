@@ -37,8 +37,33 @@ export const UNITS: Unit[] = [
 	{ id: 'u6', number: 6, title: 'Temas Avanzados', locked: true, sections: SECTIONS },
 ]
 
-export const SIDEBAR_EXTRA = [
+export interface SidebarExtraItem {
+	id: string
+	label: string
+	icon: string
+	locked: boolean
+	items?: { id: string; label: string; path: string }[]
+}
+
+export const SIDEBAR_EXTRA: SidebarExtraItem[] = [
+	{
+		id: 'cheatsheets',
+		label: 'Cheatsheets',
+		icon: 'Code',
+		locked: false,
+		items: [
+			{ id: 'sql', label: 'SQL Cheatsheet', path: '/cheatsheet/sql' },
+		],
+	},
 	{ id: 'tareas', label: 'Tareas', icon: 'ClipboardList', locked: true },
 	{ id: 'certamenes', label: 'Certámenes', icon: 'FileCheck', locked: true },
-	{ id: 'ayudantias', label: 'Ayudantías', icon: 'Users', locked: true },
+	{
+		id: 'ayudantias',
+		label: 'Ayudantías',
+		icon: 'Users',
+		locked: false,
+		items: [
+			{ id: '2', label: 'Ay. 2: Modelos + SQL', path: '/ayudantia/2' },
+		],
+	},
 ]

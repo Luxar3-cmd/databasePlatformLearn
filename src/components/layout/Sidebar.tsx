@@ -1,19 +1,25 @@
+import { useState } from 'react'
+import { NavLink } from 'react-router'
 import {
 	ChevronLeft,
 	ChevronRight,
+	ChevronDown,
 	Lock,
 	ClipboardList,
 	FileCheck,
 	Users,
+	Code,
 	type LucideIcon,
 } from 'lucide-react'
 import { UNITS, SIDEBAR_EXTRA } from '@/data/units'
+import type { SidebarExtraItem } from '@/data/units'
 import SidebarUnit from '@/components/layout/SidebarUnit'
 
 const EXTRA_ICON_MAP: Record<string, LucideIcon> = {
 	ClipboardList,
 	FileCheck,
 	Users,
+	Code,
 }
 
 interface SidebarProps {
@@ -22,6 +28,48 @@ interface SidebarProps {
 	onToggleMobile: () => void
 	onToggleCollapse: () => void
 	onCloseMobile: () => void
+}
+
+function SidebarExtraExpandable({ item, collapsed, onNavigate }: { item: SidebarExtraItem; collapsed: boolean; onNavigate: () => void }) {
+	const [expanded, setExpanded] = useState(true)
+	const Icon = EXTRA_ICON_MAP[item.icon] ?? ClipboardList
+
+	return (
+		<div>
+			<button
+				className="w-full flex items-center gap-3 px-3 py-2 rounded-md text-stone-300 hover:text-stone-100 hover:bg-stone-800 transition-colors"
+				onClick={() => setExpanded(v => !v)}
+			>
+				<Icon size={18} className="shrink-0" />
+				{!collapsed && (
+					<>
+						<span className="flex-1 text-sm text-left truncate">{item.label}</span>
+						<ChevronDown size={14} className={`shrink-0 transition-transform ${expanded ? '' : '-rotate-90'}`} />
+					</>
+				)}
+			</button>
+			{!collapsed && expanded && item.items && (
+				<div className="ml-4 mt-1 space-y-0.5">
+					{item.items.map(sub => (
+						<NavLink
+							key={sub.id}
+							to={sub.path}
+							onClick={onNavigate}
+							className={({ isActive }) =>
+								`flex items-center gap-3 px-3 py-1.5 rounded-md text-sm transition-colors ${
+									isActive
+										? 'bg-amber-500/10 text-amber-400 font-medium'
+										: 'text-stone-400 hover:text-stone-100 hover:bg-stone-800'
+								}`
+							}
+						>
+							<span>{sub.label}</span>
+						</NavLink>
+					))}
+				</div>
+			)}
+		</div>
+	)
 }
 
 export default function Sidebar({ isOpen, collapsed, onToggleCollapse, onCloseMobile }: SidebarProps) {
@@ -65,6 +113,17 @@ export default function Sidebar({ isOpen, collapsed, onToggleCollapse, onCloseMo
 				<div className="border-t border-stone-800 my-2" />
 				<div className="space-y-0.5">
 					{SIDEBAR_EXTRA.map((item) => {
+						if (!item.locked && item.items) {
+							return (
+								<SidebarExtraExpandable
+									key={item.id}
+									item={item}
+									collapsed={collapsed}
+									onNavigate={onCloseMobile}
+								/>
+							)
+						}
+
 						const Icon = EXTRA_ICON_MAP[item.icon] ?? ClipboardList
 						return (
 							<div
